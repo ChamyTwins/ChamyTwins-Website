@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ChamyTwins-Website/static/css/main.74f571f6.css",
-    "main.js": "/ChamyTwins-Website/static/js/main.e7c6d258.js",
+    "main.js": "/ChamyTwins-Website/static/js/main.869b069b.js",
     "static/media/6.jpg": "/ChamyTwins-Website/static/media/6.fbd401369bfa7bcbf4ec.jpg",
     "static/media/4.jpg": "/ChamyTwins-Website/static/media/4.e8e1fc15a728677bb84c.jpg",
     "static/media/BG1.jpg": "/ChamyTwins-Website/static/media/BG1.19d8cced9cc01a68fd2f.jpg",
@@ -21,10 +21,10 @@
     "static/media/1.jpg": "/ChamyTwins-Website/static/media/1.04dcaee2cab33b909d59.jpg",
     "index.html": "/ChamyTwins-Website/index.html",
     "main.74f571f6.css.map": "/ChamyTwins-Website/static/css/main.74f571f6.css.map",
-    "main.e7c6d258.js.map": "/ChamyTwins-Website/static/js/main.e7c6d258.js.map"
+    "main.869b069b.js.map": "/ChamyTwins-Website/static/js/main.869b069b.js.map"
   },
   "entrypoints": [
     "static/css/main.74f571f6.css",
-    "static/js/main.e7c6d258.js"
+    "static/js/main.869b069b.js"
   ]
 }
