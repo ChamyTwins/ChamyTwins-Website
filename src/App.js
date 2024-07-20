@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Admin/Login.js";
-import DashboardAdmin from "./Admin/Dashboard.js";
 import Homepage from "./User/Homepage.js";
 import Caresheet from "./User/Caresheet.js";
 import Member from "./User/Member.js";
@@ -19,7 +18,6 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/loginAdmin" element={<Login />} />
-          <Route exact path="/dashboardAdmin" element={<DashboardAdmin />} />
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/caresheet" element={<Caresheet />} />
           <Route exact path="/chamytwinsMember" element={<Member />} />
