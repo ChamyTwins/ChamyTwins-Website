@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ChamyTwins-Website/static/css/main.74f571f6.css",
+    "main.js": "/ChamyTwins-Website/static/js/main.e7c6d258.js",
+    "static/media/6.jpg": "/ChamyTwins-Website/static/media/6.fbd401369bfa7bcbf4ec.jpg",
+    "static/media/4.jpg": "/ChamyTwins-Website/static/media/4.e8e1fc15a728677bb84c.jpg",
+    "static/media/BG1.jpg": "/ChamyTwins-Website/static/media/BG1.19d8cced9cc01a68fd2f.jpg",
+    "static/media/veiled.jpg": "/ChamyTwins-Website/static/media/veiled.2ddd9b41b54bea4e2ee9.jpg",
+    "static/media/5.jpg": "/ChamyTwins-Website/static/media/5.9f6596d562ad17589f72.jpg",
+    "static/media/2.JPG": "/ChamyTwins-Website/static/media/2.8fa2806d2672f0218193.JPG",
+    "static/media/panther.JPG": "/ChamyTwins-Website/static/media/panther.60a14a93bda42c3686ef.JPG",
+    "static/media/3.jpg": "/ChamyTwins-Website/static/media/3.578a7f002166123c34a4.jpg",
+    "static/media/7.JPG": "/ChamyTwins-Website/static/media/7.3ce90fd6824c5f6f7de8.JPG",
+    "static/media/phanter_Caresheet.JPG": "/ChamyTwins-Website/static/media/phanter_Caresheet.e3b622ec5303f946a5c5.JPG",
+    "static/media/drinking.jpg": "/ChamyTwins-Website/static/media/drinking.ac6065c76439e4049dc7.jpg",
+    "static/media/decor.png": "/ChamyTwins-Website/static/media/decor.84d5c81fa0f8417d3245.png",
+    "static/media/uva_uvb.jpg": "/ChamyTwins-Website/static/media/uva_uvb.2f9d7c850b70f7ef95f6.jpg",
+    "static/media/cage.png": "/ChamyTwins-Website/static/media/cage.8f6aa1992738fc018658.png",
+    "static/media/food.png": "/ChamyTwins-Website/static/media/food.67f0caa365b386ff6550.png",
+    "static/media/Chamytwinslogo.png": "/ChamyTwins-Website/static/media/Chamytwinslogo.597abff61bc14c46f89a.png",
+    "static/media/1.jpg": "/ChamyTwins-Website/static/media/1.04dcaee2cab33b909d59.jpg",
+    "index.html": "/ChamyTwins-Website/index.html",
+    "main.74f571f6.css.map": "/ChamyTwins-Website/static/css/main.74f571f6.css.map",
+    "main.e7c6d258.js.map": "/ChamyTwins-Website/static/js/main.e7c6d258.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74f571f6.css",
+    "static/js/main.e7c6d258.js"
+  ]
+}
