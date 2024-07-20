@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./User/Homepage.js";
 import Caresheet from "./User/Caresheet.js";
 import Member from "./User/Member.js";
@@ -14,11 +14,11 @@ import "./style/member.css";
 function App() {
   return (
     <div>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route exact path="/caresheet" element={<Caresheet />} />
-          <Route exact path="/chamytwinsMember" element={<Member />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/caresheet" element={<Caresheet />} />
+          <Route path="/chamytwinsMember" element={<Member />} />
         </Routes>
       </Router>
     </div>
