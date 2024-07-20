@@ -178,8 +178,8 @@
     width: 100%;
     padding: 4%;
     border-radius: 5px;
-    border: 1px solid;
-    color: #ff9355;
+    border: 1px solid #ff9355;
+    color: black;
   }
 
   .custom-box-hmpg::placeholder {
@@ -396,8 +396,8 @@
     width: 100%;
     padding: 3.5%;
     border-radius: 5px;
-    border: 1px solid;
-    color: #ff9355;
+    border: 1px solid #ff9355;
+    color: black;
   }
 
   .custom-box-hmpg::placeholder {
@@ -614,8 +614,8 @@
     width: 100%;
     padding: 4%;
     border-radius: 5px;
-    border: 1px solid;
-    color: #ff9355;
+    border: 1px solid #ff9355;
+    color: black;
   }
 
   .custom-box-hmpg::placeholder {
@@ -848,8 +848,8 @@
     width: 100%;
     padding: 3%;
     border-radius: 5px;
-    border: 1px solid;
-    color: #ff9355;
+    border: 1px solid #ff9355;
+    color: black;
   }
 
   .custom-box-hmpg::placeholder {
@@ -1089,8 +1089,8 @@
     width: 100%;
     padding: 2.5%;
     border-radius: 5px;
-    border: 1px solid;
-    color: #ff9355;
+    border: 1px solid #ff9355;
+    color: black;
   }
 
   .custom-box-hmpg::placeholder {
@@ -1330,8 +1330,8 @@
     width: 100%;
     padding: 2%;
     border-radius: 5px;
-    border: 1px solid;
-    color: #ff9355;
+    border: 1px solid #ff9355;
+    color: black;
   }
 
   .custom-box-hmpg::placeholder {

@@ -2,7 +2,7 @@
   "name": "frontend",
   "homepage": "https://ChamyTwins.github.io/ChamyTwins-Website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@reduxjs/toolkit": "^1.9.7",

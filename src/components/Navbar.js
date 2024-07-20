@@ -26,7 +26,7 @@ const Navbar = () => {
             </span>
           </button>
           <div className="img1-con-nav position-relative overflow-hidden">
-            <a href="/">
+            <a href="/ChamyTwins-Website">
               <img
                 className="logobisnis object-fit-contain"
                 alt="chamytwinslogo"
@@ -62,7 +62,7 @@ const Navbar = () => {
                       loc.pathname === "/" ? "nav-link active" : " nav-link"
                     }
                     aria-current="page"
-                    href="/"
+                    href="/ChamyTwins-Website"
                   >
                     Homepage
                   </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
                         ? "nav-link active"
                         : "nav-link "
                     }
-                    href="/caresheet"
+                    href="/ChamyTwins-Website/caresheet"
                   >
                     Chamelon Caresheet
                   </a>
@@ -86,7 +86,7 @@ const Navbar = () => {
                         ? "nav-link active"
                         : "nav-link "
                     }
-                    href="/chamytwinsMember"
+                    href="/ChamyTwins-Website/chamytwinsMember"
                   >
                     ChamyTwins Family
                   </a>

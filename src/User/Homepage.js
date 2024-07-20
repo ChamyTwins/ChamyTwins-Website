@@ -183,7 +183,7 @@ const Homepage = () => {
           <div className="con-form-hmpg position-relative">
             <div className="custom-form-hmpg display-flex flex-column d-inline-flex position-relative start-50 top-0 translate-middle-x">
               <div
-                class={
+                className={
                   isAlert === true
                     ? "alert alert-success alert-dismissible fade show"
                     : "alert d-none alert-success alert-dismissible fade show"
@@ -193,7 +193,7 @@ const Homepage = () => {
                 <strong>Thankyou!</strong> We will contact you soon !
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="alert"
                   aria-label="Close"
                 ></button>
@@ -236,7 +236,7 @@ const Homepage = () => {
                 disabled
               >
                 <span
-                  class="spinner-border spinner-border-sm"
+                  className="spinner-border spinner-border-sm"
                   aria-hidden="true"
                 ></span>
                 <span role="status">Loading...</span>

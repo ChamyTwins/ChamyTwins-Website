@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./User/Homepage.js";
 import Caresheet from "./User/Caresheet.js";
 import Member from "./User/Member.js";
@@ -14,13 +14,13 @@ import "./style/member.css";
 function App() {
   return (
     <div>
-      <Router>
+      <BrowserRouter basename="/ChamyTwins-Website">
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route exact path="/" element={<Homepage />} />
           <Route path="/caresheet" element={<Caresheet />} />
           <Route path="/chamytwinsMember" element={<Member />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
