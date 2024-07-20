@@ -1,0 +1,212 @@
+@media (max-width: 575.98px) {
+  .custom-icon-hmpg {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .custom-icon {
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .custom-nav {
+    margin: 6% 0 6% 2%;
+  }
+
+  .img1-con-nav {
+    width: 15vw;
+    height: 15vw;
+    margin-right: 6%;
+  }
+
+  .con-nav {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+  .custom-icon-hmpg {
+    color: white;
+    font-size: 2em;
+  }
+
+  .custom-icon {
+    color: black;
+    font-size: 2em;
+  }
+
+  .custom-nav {
+    margin: 6% 0 6% 2%;
+  }
+
+  .img1-con-nav {
+    width: 12vw;
+    height: 12vw;
+    margin-right: 6%;
+  }
+
+  .logobisnis {
+    width: 100%;
+    height: 100%;
+  }
+
+  .con-nav {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+  .custom-icon-hmpg {
+    color: white;
+    font-size: 2em;
+  }
+
+  .custom-nav-title {
+    font-size: 2em;
+  }
+
+  .nav-item {
+    font-size: 1.6em;
+  }
+
+  .custom-icon {
+    color: black;
+    font-size: 3em;
+  }
+
+  .custom-nav {
+    margin: 6% 0 6% 2%;
+  }
+
+  .img1-con-nav {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 6%;
+  }
+
+  .logobisnis {
+    width: 100%;
+    height: 100%;
+  }
+
+  .con-nav {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+  .custom-icon-hmpg {
+    color: white;
+    font-size: 2.5em;
+  }
+
+  .custom-nav-title {
+    font-size: 2em;
+  }
+
+  .nav-item {
+    font-size: 1.3em;
+  }
+
+  .custom-icon {
+    color: black;
+    font-size: 2.5em;
+  }
+
+  .custom-nav {
+    margin: 6% 0 5% 2%;
+  }
+
+  .img1-con-nav {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 6%;
+  }
+
+  .logobisnis {
+    width: 100%;
+    height: 100%;
+  }
+
+  .con-nav {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1199.99px) and (max-width: 1399.98px) {
+  .custom-icon-hmpg {
+    color: white;
+    font-size: 2em;
+  }
+
+  .custom-nav-title {
+    font-size: 1.5em;
+  }
+
+  .nav-item {
+    font-size: 1em;
+  }
+
+  .custom-icon {
+    color: black;
+    font-size: 2em;
+  }
+
+  .custom-nav {
+    margin: 4% 0 4% 2%;
+  }
+
+  .img1-con-nav {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 6%;
+  }
+
+  .logobisnis {
+    width: 100%;
+    height: 100%;
+  }
+
+  .con-nav {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1399.99px) {
+  .custom-icon-hmpg {
+    color: white;
+    font-size: 2.5em;
+  }
+
+  .custom-nav-title {
+    font-size: 1.5em;
+  }
+
+  .nav-item {
+    font-size: 1em;
+  }
+
+  .custom-icon {
+    color: black;
+    font-size: 2.5em;
+  }
+
+  .custom-nav {
+    margin: 4% 0 4% 2%;
+  }
+
+  .img1-con-nav {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 4%;
+  }
+
+  .logobisnis {
+    width: 100%;
+    height: 100%;
+  }
+
+  .con-nav {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,1369 @@
+@media (max-width: 575.98px) {
+  .con1-hmpg {
+    height: 170vw;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
+    background-position: 0, 45%;
+    /* background-color: transparent; */
+    background-size: auto 90%;
+  }
+
+  .title-con1 {
+    width: 90%;
+  }
+
+  .title-hmpg1 {
+    font-size: 2.5em;
+    padding: 0 0 4% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg1 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con2-hmpg {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .title-hmpg2 {
+    font-size: 2.5em;
+    padding: 10% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg2 {
+    font-size: 1.1em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg2 {
+    font-size: 1em;
+    padding: 0 5% 7% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg3 {
+    font-size: 1em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .con3-hmpg {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+  }
+
+  .title-hmpg3 {
+    font-size: 1.7em;
+    padding: 10% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg3 {
+    font-size: 1.1em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .img2-con-hmpg {
+    width: 90%;
+    height: 55vw;
+    border-radius: 15px;
+    background-color: black;
+  }
+
+  .img2-custom {
+    width: 100%;
+  }
+
+  .img3-custom {
+    width: 100%;
+    translate: 0 -30%;
+    opacity: 90%;
+  }
+
+  .text-hmpg4 {
+    font-size: 1em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .sub-title-hmpg4 {
+    font-size: 1.1em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg5 {
+    font-size: 1em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg6-left {
+    font-size: 1em;
+    padding: 0% 5% 10% 5%;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+  }
+
+  .text-hmpg6-right {
+    font-size: 1em;
+    padding: 0% 5% 10% 5%;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+  }
+
+  .custom-link {
+    text-decoration: none;
+  }
+
+  .con4-hmpg {
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .title-hmpg4 {
+    padding: 10% 5% 5% 5%;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con-form-hmpg {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-form-hmpg {
+    width: 75%;
+  }
+
+  .custom-box-hmpg {
+    margin: 5% 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 4%;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #ff9355;
+  }
+
+  .custom-box-hmpg::placeholder {
+    font-size: 1em;
+    color: #898989;
+  }
+
+  .custom-button-hmpg {
+    background-color: white;
+    padding: 3% 13%;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 25% 0;
+  }
+
+  .custom-button-hmpg-load {
+    background-color: white;
+    padding: 3% 13%;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 25% 0;
+  }
+
+  .custom-button-hmpg:hover {
+    background-color: #fc5c02;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+  .con1-hmpg {
+    height: 170vw;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
+    background-position: 0, 45%;
+    /* background-color: transparent; */
+    background-size: cover;
+  }
+
+  .title-con1 {
+    width: 90%;
+  }
+
+  .title-hmpg1 {
+    font-size: 4em;
+    padding: 0 0 4% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg1 {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con2-hmpg {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .title-hmpg2 {
+    font-size: 3em;
+    padding: 10% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg2 {
+    font-size: 1.5em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg2 {
+    font-size: 1.2em;
+    padding: 0 5% 7% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg3 {
+    font-size: 1.2em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .con3-hmpg {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+  }
+
+  .title-hmpg3 {
+    font-size: 2em;
+    padding: 10% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg3 {
+    font-size: 1.5em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .img2-con-hmpg {
+    width: 90%;
+    height: 55vw;
+    border-radius: 15px;
+    background-color: black;
+  }
+
+  .img2-custom {
+    width: 100%;
+  }
+
+  .img3-custom {
+    width: 100%;
+    translate: 0 -30%;
+    opacity: 90%;
+  }
+
+  .text-hmpg4 {
+    font-size: 1.2em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .sub-title-hmpg4 {
+    font-size: 1.5em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg5 {
+    font-size: 1.2em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg6-left {
+    font-size: 1.2em;
+    padding: 0% 5% 10% 5%;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+  }
+
+  .text-hmpg6-right {
+    font-size: 1.2em;
+    padding: 0% 5% 10% 5%;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+  }
+
+  .custom-link {
+    text-decoration: none;
+  }
+
+  .con4-hmpg {
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .title-hmpg4 {
+    padding: 10% 5% 5% 5%;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con-form-hmpg {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-form-hmpg {
+    width: 75%;
+  }
+
+  .custom-box-hmpg {
+    margin: 3% 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 3.5%;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #ff9355;
+  }
+
+  .custom-box-hmpg::placeholder {
+    font-size: 1.2em;
+    color: #898989;
+  }
+
+  .custom-button-hmpg {
+    background-color: white;
+    padding: 2% 9%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 25% 0;
+  }
+
+  .custom-button-hmpg-load {
+    background-color: #fc5c02;
+    padding: 2% 9%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 25% 0;
+  }
+
+  .custom-button-hmpg:hover {
+    background-color: #fc5c02;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+  .con1-hmpg {
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
+    background-position: center;
+    /* background-color: transparent; */
+    background-size: cover;
+  }
+
+  .title-con1 {
+    width: 90%;
+  }
+
+  .title-hmpg1 {
+    font-size: 4.5em;
+    padding: 0 0 4% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg1 {
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con2-hmpg {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .title-hmpg2 {
+    font-size: 3.5em;
+    padding: 10% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg2 {
+    font-size: 2em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg2 {
+    font-size: 1.8em;
+    padding: 0 5% 7% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg3 {
+    font-size: 1.8em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .con3-hmpg {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+  }
+
+  .title-hmpg3 {
+    font-size: 3.5em;
+    padding: 8% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg3 {
+    font-size: 2em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .img2-con-hmpg {
+    width: 95%;
+    height: 60vw;
+    border-radius: 30px;
+    background-color: black;
+  }
+
+  .img2-custom {
+    width: 100%;
+  }
+
+  .img3-custom {
+    width: 100%;
+    translate: 0 -30%;
+    opacity: 90%;
+  }
+
+  .text-hmpg4 {
+    font-size: 1.8em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .sub-title-hmpg4 {
+    font-size: 2em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg5 {
+    font-size: 1.8em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg6-left {
+    font-size: 1.8em;
+    padding: 0% 5% 10% 5%;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+  }
+
+  .text-hmpg6-right {
+    font-size: 1.8em;
+    padding: 0% 5% 10% 5%;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+  }
+
+  .custom-link {
+    text-decoration: none;
+  }
+
+  .con4-hmpg {
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .title-hmpg4 {
+    padding: 7% 5% 5% 5%;
+    font-size: 2.4em;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con-form-hmpg {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-form-hmpg {
+    width: 75%;
+  }
+
+  .custom-box-hmpg {
+    margin: 5% 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 4%;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #ff9355;
+  }
+
+  .custom-box-hmpg::placeholder {
+    font-size: 1.5em;
+    color: #898989;
+  }
+
+  .custom-button-hmpg {
+    background-color: white;
+    padding: 3% 13%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 10px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 18% 0;
+  }
+
+  .custom-button-hmpg-load {
+    background-color: white;
+    padding: 3% 13%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 10px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 18% 0;
+  }
+
+  .custom-button-hmpg:hover {
+    background-color: #fc5c02;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+  .con1-hmpg {
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
+    background-position: center;
+    /* background-color: transparent; */
+    background-size: cover;
+  }
+
+  .title-con1 {
+    width: 90%;
+  }
+
+  .title-hmpg1 {
+    font-size: 4.5em;
+    padding: 0 0 4% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg1 {
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con2-hmpg {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .title-hmpg2 {
+    font-size: 3.5em;
+    padding: 10% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg2 {
+    font-size: 2em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg2 {
+    font-size: 1.5em;
+    padding: 0 5% 7% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg3 {
+    font-size: 1.5em;
+    padding: 0 5% 10% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .con3-hmpg {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+  }
+
+  .title-hmpg3 {
+    font-size: 3.5em;
+    padding: 5% 0 10% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg3 {
+    font-size: 2em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .img2-con-hmpg {
+    width: 95%;
+    height: 30vw;
+    border-radius: 30px;
+    background-color: black;
+  }
+
+  .img2-custom {
+    width: 100%;
+  }
+
+  .img3-custom {
+    width: 100%;
+    translate: 0 -30%;
+    opacity: 90%;
+  }
+
+  .text-hmpg4 {
+    font-size: 1.2em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: center;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(50%);
+  }
+
+  .sub-title-hmpg4 {
+    font-size: 2em;
+    padding: 0 0% 10% 5%;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg5 {
+    font-size: 1.2em;
+    padding: 10% 5% 3% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: center;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(50%);
+  }
+
+  .text-hmpg6-left {
+    font-size: 1.2em;
+    padding: 7% 5% 10% 5%;
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  .text-hmpg6-right {
+    font-size: 1.2em;
+    padding: 7% 5% 10% 5%;
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  .custom-link {
+    text-decoration: none;
+  }
+
+  .con4-hmpg {
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .title-hmpg4 {
+    padding: 10% 5% 5% 5%;
+    font-size: 2.4em;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con-form-hmpg {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-form-hmpg {
+    width: 75%;
+  }
+
+  .custom-box-hmpg {
+    margin: 3% 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #ff9355;
+  }
+
+  .custom-box-hmpg::placeholder {
+    font-size: 1.5em;
+    color: #898989;
+  }
+
+  .custom-button-hmpg {
+    background-color: white;
+    padding: 1.5% 6%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 10px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 18% 0;
+  }
+
+  .custom-button-hmpg-load {
+    background-color: white;
+    padding: 1.5% 6%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 10px;
+    border: 2px solid #fc5c02;
+    margin: 8% 0 18% 0;
+  }
+
+  .custom-button-hmpg:hover {
+    background-color: #fc5c02;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+
+@media (min-width: 1199.99px) and (max-width: 1399.98px) {
+  .con1-hmpg {
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
+    background-position: center;
+    /* background-color: transparent; */
+    background-size: 100% auto;
+  }
+
+  .title-con1 {
+    width: 90%;
+  }
+
+  .title-hmpg1 {
+    font-size: 4em;
+    padding: 0 0 2% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg1 {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con2-hmpg {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .title-hmpg2 {
+    font-size: 3em;
+    padding: 7% 0 6% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg2 {
+    font-size: 1.5em;
+    padding: 0 5% 5% 5%;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg2 {
+    font-size: 1.2em;
+    padding: 0 5% 3% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg3 {
+    font-size: 1.2em;
+    padding: 0 5% 3% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .con3-hmpg {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+  }
+
+  .title-hmpg3 {
+    font-size: 3em;
+    padding: 5% 0 7% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg3 {
+    font-size: 1.5em;
+    padding: 0 0 0 10%;
+    margin-bottom: 7%;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg4 {
+    font-size: 1.5em;
+    padding: 0 10% 0 0;
+    margin-bottom: 7%;
+    font-weight: bold;
+    text-align: right;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg5 {
+    font-size: 1.2em;
+    padding: 10% 10% 3% 10%;
+    font-family: "Kaisei Decol", serif;
+    text-align: center;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .text-hmpg6-left {
+    font-size: 1.2em;
+    padding: 6% 5% 10% 5%;
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .text-hmpg6-right {
+    font-size: 1.2em;
+    padding: 6% 5% 10% 5%;
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .custom-col-hmpg {
+    height: 35vw;
+    /* background-color: red; */
+    width: 80%;
+  }
+
+  .img2-con-hmpg {
+    width: 80%;
+    height: 26vw;
+    border-radius: 30px;
+    background-color: black;
+    /* margin-bottom: 20vh; */
+  }
+
+  .img2-custom {
+    height: 100%;
+  }
+
+  .img3-custom {
+    width: 100%;
+    translate: 0 -30%;
+    opacity: 90%;
+  }
+
+  .text-hmpg4 {
+    font-size: 1.2em;
+    padding: 10% 10% 3% 10%;
+    font-family: "Kaisei Decol", serif;
+    text-align: center;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .custom-link {
+    text-decoration: none;
+  }
+
+  .con4-hmpg {
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .title-hmpg4 {
+    padding: 5% 5% 5% 5%;
+    font-size: 2.4em;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con-form-hmpg {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-form-hmpg {
+    width: 60%;
+  }
+
+  .custom-box-hmpg {
+    margin: 3% 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2.5%;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #ff9355;
+  }
+
+  .custom-box-hmpg::placeholder {
+    font-size: 1.2em;
+    color: #898989;
+  }
+
+  .custom-button-hmpg {
+    background-color: white;
+    padding: 1% 5%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 6% 0 10% 0;
+  }
+
+  .custom-button-hmpg-load {
+    background-color: white;
+    padding: 1% 5%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 6% 0 10% 0;
+  }
+
+  .custom-button-hmpg:hover {
+    background-color: #fc5c02;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+
+@media (min-width: 1399.99px) {
+  .con1-hmpg {
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
+    background-position: center;
+    /* background-color: transparent; */
+    background-size: 100% auto;
+  }
+
+  .title-con1 {
+    width: 90%;
+  }
+
+  .title-hmpg1 {
+    font-size: 4.5em;
+    padding: 0 0 2% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg1 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con2-hmpg {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .title-hmpg2 {
+    font-size: 3.5em;
+    padding: 7% 0 6% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg2 {
+    font-size: 2em;
+    padding: 0 5% 5% 5%;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg2 {
+    font-size: 1.5em;
+    padding: 0 5% 3% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .text-hmpg3 {
+    font-size: 1.5em;
+    padding: 0 5% 3% 5%;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .con3-hmpg {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+  }
+
+  .title-hmpg3 {
+    font-size: 3.5em;
+    padding: 5% 0 7% 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg3 {
+    font-size: 2em;
+    padding: 0 0 0 10%;
+    margin-bottom: 7%;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title-hmpg4 {
+    font-size: 2em;
+    padding: 0 10% 0 0;
+    margin-bottom: 7%;
+    font-weight: bold;
+    text-align: right;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .text-hmpg5 {
+    font-size: 1.5em;
+    padding: 10% 10% 3% 10%;
+    font-family: "Kaisei Decol", serif;
+    text-align: center;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .text-hmpg6-left {
+    font-size: 1.5em;
+    padding: 6% 5% 10% 5%;
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .text-hmpg6-right {
+    font-size: 1.5em;
+    padding: 6% 5% 10% 5%;
+    text-align: center;
+    font-family: "Kaisei Decol", serif;
+    color: #2b8cff;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .custom-col-hmpg {
+    height: 35vw;
+    /* background-color: red; */
+    width: 80%;
+  }
+
+  .img2-con-hmpg {
+    width: 80%;
+    height: 26vw;
+    background-color: black;
+    border-radius: 35px;
+    /* margin-bottom: 20vh; */
+  }
+
+  .img2-custom {
+    height: 100%;
+  }
+
+  .img3-custom {
+    width: 100%;
+    translate: 0 -30%;
+    opacity: 90%;
+  }
+
+  .text-hmpg4 {
+    font-size: 1.5em;
+    padding: 10% 10% 3% 10%;
+    font-family: "Kaisei Decol", serif;
+    text-align: center;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50;
+    transform: translateY(50%);
+  }
+
+  .custom-link {
+    text-decoration: none;
+  }
+
+  .con4-hmpg {
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .title-hmpg4 {
+    padding: 5% 5% 5% 5%;
+    font-size: 2.4em;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .con-form-hmpg {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-form-hmpg {
+    width: 60%;
+  }
+
+  .custom-box-hmpg {
+    margin: 2% 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #ff9355;
+  }
+
+  .custom-box-hmpg::placeholder {
+    font-size: 1.3em;
+    color: #898989;
+  }
+
+  .custom-button-hmpg {
+    background-color: white;
+    padding: 0.7% 3%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 6% 0 10% 0;
+  }
+
+  .custom-button-hmpg-load {
+    background-color: white;
+    padding: 0.7% 3%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fc5c02;
+    border-radius: 5px;
+    border: 2px solid #fc5c02;
+    margin: 6% 0 10% 0;
+  }
+
+  .custom-button-hmpg:hover {
+    background-color: #fc5c02;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}

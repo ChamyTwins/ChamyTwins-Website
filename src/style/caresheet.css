@@ -1,0 +1,872 @@
+@media (max-width: 575.98px) {
+  .con1-care {
+    height: auto;
+  }
+
+  .title1-care {
+    font-size: 1.9em;
+    margin: 5% 5% 0% 5%;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title1-care {
+    font-size: 1em;
+    margin: 10% 5% 10% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .sub-title3-care {
+    font-size: 1em;
+    margin: 10% 5% 10% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .img1-con-care {
+    width: 90%;
+    height: 55vw;
+    border-radius: 15px;
+    background-color: black;
+  }
+
+  .img1-custom-care {
+    width: 100%;
+  }
+
+  .con2-care {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .list-group-custom {
+    padding: 0 8%;
+  }
+
+  .custom-row {
+    margin: 0 5%;
+    padding: 10% 0;
+    /* background-color: red; */
+  }
+
+  .img2-con-care {
+    width: 100%;
+    height: 50vw;
+    /* background-color: black; */
+  }
+
+  .img2-custom-care {
+    /* width: 100%; */
+    height: 100%;
+  }
+
+  .img3-con-care {
+    width: 80%;
+    height: 45vw;
+    border-radius: 15px;
+    margin-bottom: 5%;
+  }
+
+  .img3-custom-care {
+    width: 100%;
+    translate: 0 -10%;
+  }
+
+  ol.custom-list {
+    list-style-type: disc;
+  }
+
+  .custom-list {
+    padding: 0 8% 0 5%;
+  }
+
+  .sub-title2-care {
+    font-weight: bold;
+    margin: 5% 0 0 10%;
+  }
+
+  .custom-li {
+    padding: 3% 0;
+    font-size: 0.9em;
+  }
+
+  .custom-list-drinking {
+    /* padding: 0 0 0 18%; */
+    /* background-color: black; */
+    width: 80%;
+  }
+
+  ol.custom-list-drinking {
+    list-style-type: disc;
+  }
+
+  .img4-con-care {
+    width: 100%;
+    height: 80vw;
+    margin-bottom: 5%;
+  }
+
+  .img4-custom-care {
+    height: 100%;
+    width: 95%;
+    /* translate: 0 -15%; */
+  }
+
+  .custom-list-decor {
+    /* background-color: black; */
+    width: 80%;
+  }
+
+  ol.custom-list-decor {
+    list-style-type: disc;
+  }
+
+  .img5-con-care {
+    width: 80%;
+    height: 50vw;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+  .con1-care {
+    height: auto;
+  }
+
+  .title1-care {
+    font-size: 2.5em;
+    margin: 5% 5% 0% 5%;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title1-care {
+    font-size: 1.2em;
+    margin: 10% 5% 10% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .sub-title3-care {
+    font-size: 1.2em;
+    margin: 10% 5% 10% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .img1-con-care {
+    width: 90%;
+    height: 55vw;
+    border-radius: 15px;
+    background-color: black;
+  }
+
+  .img1-custom-care {
+    width: 100%;
+  }
+
+  .con2-care {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .list-group-custom {
+    padding: 0 8%;
+  }
+
+  .custom-row {
+    margin: 0 5%;
+    padding: 10% 0;
+    /* background-color: red; */
+  }
+
+  .img2-con-care {
+    width: 100%;
+    height: 40vw;
+    /* background-color: black; */
+  }
+
+  .img2-custom-care {
+    /* width: 100%; */
+    height: 100%;
+  }
+
+  .img3-con-care {
+    width: 80%;
+    height: 45vw;
+    border-radius: 15px;
+    margin-bottom: 5%;
+  }
+
+  .img3-custom-care {
+    width: 100%;
+    translate: 0 -10%;
+  }
+
+  ol.custom-list {
+    list-style-type: disc;
+  }
+
+  .custom-list {
+    padding: 0 8% 0 5%;
+  }
+
+  .sub-title2-care {
+    font-weight: bold;
+    margin: 5% 0 0 10%;
+    font-size: 1.5em;
+  }
+
+  .custom-li {
+    padding: 3% 0;
+    font-size: 1em;
+  }
+
+  .custom-list-drinking {
+    /* padding: 0 0 0 18%; */
+    /* background-color: black; */
+    width: 80%;
+  }
+
+  ol.custom-list-drinking {
+    list-style-type: disc;
+  }
+
+  .img4-con-care {
+    width: 60%;
+    height: 48vw;
+    margin-bottom: 5%;
+    /* background-color: black; */
+  }
+
+  .img4-custom-care {
+    height: 120%;
+    width: 100%;
+    translate: 5% -9%;
+  }
+
+  .custom-list-decor {
+    /* background-color: black; */
+    width: 80%;
+  }
+
+  ol.custom-list-decor {
+    list-style-type: disc;
+  }
+
+  .img5-con-care {
+    width: 80%;
+    height: 50vw;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+  .con1-care {
+    height: auto;
+  }
+
+  .title1-care {
+    font-size: 3em;
+    margin: 2% 5% 0% 5%;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title1-care {
+    font-size: 1.8em;
+    margin: 8% 5% 10% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .sub-title3-care {
+    font-size: 1.8em;
+    margin: 8% 5% 10% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .img1-con-care {
+    width: 90%;
+    height: 55vw;
+    border-radius: 30px;
+    background-color: black;
+  }
+
+  .img1-custom-care {
+    width: 100%;
+  }
+
+  .con2-care {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .list-group-custom {
+    padding: 0 8%;
+  }
+
+  .custom-row {
+    margin: 0 5%;
+    padding: 10% 0;
+    /* background-color: red; */
+  }
+
+  .img2-con-care {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .img2-custom-care {
+    /* width: 100%; */
+    height: 100%;
+  }
+
+  .img3-con-care {
+    width: 90%;
+    height: 50vw;
+    border-radius: 30px;
+    margin-bottom: 5%;
+  }
+
+  .img3-custom-care {
+    width: 100%;
+    translate: 0 -10%;
+  }
+
+  ol.custom-list {
+    list-style-type: disc;
+  }
+
+  .custom-list {
+    padding: 0 8% 0 10%;
+  }
+
+  .sub-title2-care {
+    font-weight: bold;
+    margin: 5% 0 0 7%;
+    font-size: 1.8em;
+    background-color: black;
+  }
+
+  .custom-li {
+    padding: 2% 0;
+    font-size: 1.5em;
+  }
+
+  .custom-list-drinking {
+    /* padding: 0 0 0 9%; */
+    width: 80%;
+  }
+
+  ol.custom-list-drinking {
+    list-style-type: disc;
+  }
+
+  .img4-con-care {
+    width: 80%;
+    height: 70vw;
+    margin-bottom: 5%;
+    /* background-color: black; */
+  }
+
+  .img4-custom-care {
+    height: 120%;
+    /* width: 100%; */
+    translate: -25% -9%;
+  }
+
+  .custom-list-decor {
+    padding: 0 8% 0 5%;
+  }
+
+  ol.custom-list-decor {
+    list-style-type: disc;
+  }
+
+  .img5-con-care {
+    width: 80%;
+    height: 50vw;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+  .con1-care {
+    height: auto;
+  }
+
+  .title1-care {
+    font-size: 3.5em;
+    margin: 0% 5% 8% 5%;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title1-care {
+    font-size: 1.5em;
+    margin: 0 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
+  }
+
+  .sub-title3-care {
+    font-size: 1.5em;
+    margin: 8% 5% 5% 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .img1-con-care {
+    width: 90%;
+    height: 25vw;
+    background-color: black;
+    border-radius: 30px;
+  }
+
+  .img1-custom-care {
+    width: 100%;
+  }
+
+  .con2-care {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .list-group-custom {
+    padding: 0 8%;
+  }
+
+  .custom-row {
+    margin: 0 5%;
+    padding: 5% 0;
+    /* background-color: red; */
+  }
+
+  .img2-con-care {
+    width: 80%;
+    height: 25vw;
+    /* background-color: black; */
+  }
+
+  .img2-custom-care {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img3-con-care {
+    width: 95%;
+    height: 20vw;
+    margin-bottom: 5%;
+    border-radius: 15px;
+  }
+
+  .img3-custom-care {
+    width: 100%;
+    height: 100%;
+    /* translate: 0 -10%; */
+  }
+
+  ol.custom-list {
+    list-style-type: disc;
+  }
+
+  .custom-list {
+    padding: 0 10% 0 10%;
+  }
+
+  .sub-title2-care {
+    font-weight: bold;
+    margin: 5% 0 0 7%;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .custom-li {
+    padding: 2% 0;
+    font-size: 1.1em;
+  }
+
+  .custom-list-drinking {
+    /* padding: 0 0 0 9%; */
+    width: 80%;
+    /* background-color: black; */
+  }
+
+  ol.custom-list-drinking {
+    list-style-type: disc;
+  }
+
+  .img4-con-care {
+    width: 80%;
+    height: 27vw;
+    margin-bottom: 5%;
+    /* background-color: black; */
+  }
+
+  .img4-custom-care {
+    height: 120%;
+    /* width: 100%; */
+    translate: -23% -9%;
+  }
+
+  .custom-list-decor {
+    padding: 0 10% 0 5%;
+  }
+
+  ol.custom-list-decor {
+    list-style-type: disc;
+  }
+
+  .img5-con-care {
+    width: 100%;
+    height: 25vw;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 1199.99px) and (max-width: 1399.98px) {
+  .con1-care {
+    height: auto;
+  }
+
+  .title1-care {
+    font-size: 3em;
+    margin: 0 5% 5% 5%;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title1-care {
+    font-size: 1.2em;
+    margin: 0 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .custom-col-0 {
+    height: 25vw;
+  }
+
+  .sub-title3-care {
+    font-size: 1.2em;
+    margin: 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .img1-con-care {
+    width: 90%;
+    height: 25vw;
+    border-radius: 30px;
+    background-color: black;
+  }
+
+  .img1-custom-care {
+    width: 100%;
+  }
+
+  .con2-care {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+    /* width: 99%; */
+  }
+
+  .list-group-custom {
+    padding: 0 8%;
+  }
+
+  .custom-row-1 {
+    margin: 0;
+    padding: 0 5%;
+    /* background-color: red; */
+    width: 100%;
+  }
+
+  .custom-row-2 {
+    padding: 2% 5%;
+    /* background-color: red; */
+  }
+
+  .custom-row {
+    margin: 0 5%;
+    padding: 5% 0;
+    /* background-color: red; */
+  }
+
+  .img2-con-care {
+    width: 75%;
+    height: 20vw;
+    /* background-color: black; */
+  }
+
+  .img2-custom-care {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img3-con-care {
+    width: 90%;
+    height: 15vw;
+    margin: 5% 0;
+    border-radius: 15px;
+  }
+
+  .img3-custom-care {
+    width: 100%;
+    height: 100%;
+    translate: 0 0;
+  }
+
+  ol.custom-list {
+    list-style-type: disc;
+  }
+
+  .custom-list {
+    padding: 0 10% 0 10%;
+    font-size: 0.5em;
+  }
+
+  .sub-title2-care {
+    font-weight: bold;
+    margin: 5% 0 0 7%;
+    font-size: 1.5em;
+  }
+
+  .custom-li {
+    padding: 2% 0;
+    font-size: 1.8em;
+  }
+
+  .custom-list-drinking {
+    /* padding: 0 0 0 9%; */
+    width: 80%;
+    font-size: 0.5em;
+    /* background-color: black; */
+  }
+
+  ol.custom-list-drinking {
+    list-style-type: disc;
+  }
+
+  .img4-con-care {
+    width: 80%;
+    height: 22vw;
+    margin-bottom: 5%;
+    /* background-color: black; */
+  }
+
+  .img4-custom-care {
+    height: 120%;
+    /* width: 100%; */
+    translate: -23% -9%;
+  }
+
+  .custom-list-decor {
+    padding: 0 10% 0 5%;
+    font-size: 0.5em;
+  }
+
+  ol.custom-list-decor {
+    list-style-type: disc;
+  }
+
+  .img5-con-care {
+    width: 80%;
+    height: 18vw;
+    margin: 10% 0;
+  }
+
+  .custom-row-4 {
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 1399.99px) {
+  .con1-care {
+    height: auto;
+  }
+
+  .title1-care {
+    font-size: 3em;
+    margin: 0 5% 5% 5%;
+    font-weight: bold;
+    font-family: "Kaisei Decol", serif;
+  }
+
+  .sub-title1-care {
+    font-size: 1.5em;
+    margin: 0 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .custom-col-0 {
+    height: 25vw;
+  }
+
+  .sub-title3-care {
+    font-size: 1.5em;
+    margin: 5%;
+    font-family: "Kaisei Decol", serif;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .img1-con-care {
+    width: 90%;
+    height: 25vw;
+    background-color: black;
+    border-radius: 30px;
+  }
+
+  .img1-custom-care {
+    width: 100%;
+  }
+
+  .con2-care {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+    /* width: 99%; */
+  }
+
+  .list-group-custom {
+    padding: 0 8%;
+  }
+
+  .custom-row-1 {
+    margin: 0;
+    padding: 0 5%;
+    /* background-color: red; */
+    width: 100%;
+  }
+
+  .custom-row-2 {
+    padding: 2% 5%;
+    /* background-color: red; */
+  }
+
+  .custom-row {
+    margin: 0 5%;
+    padding: 5% 0;
+    /* background-color: red; */
+  }
+
+  .img2-con-care {
+    width: 75%;
+    height: 20vw;
+    /* background-color: black; */
+  }
+
+  .img2-custom-care {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img3-con-care {
+    width: 90%;
+    height: 15vw;
+    margin: 5% 0;
+    border-radius: 30px;
+  }
+
+  .img3-custom-care {
+    width: 100%;
+    height: 100%;
+    translate: 0 0;
+  }
+
+  ol.custom-list {
+    list-style-type: disc;
+  }
+
+  .custom-list {
+    padding: 0 10% 0 10%;
+    font-size: 0.7em;
+  }
+
+  .sub-title2-care {
+    font-weight: bold;
+    margin: 5% 0 0 7%;
+    font-size: 1.5em;
+  }
+
+  .custom-li {
+    padding: 2% 0;
+    font-size: 1.8em;
+  }
+
+  .custom-list-drinking {
+    /* padding: 0 0 0 9%; */
+    width: 80%;
+    font-size: 0.7em;
+    /* background-color: black; */
+  }
+
+  ol.custom-list-drinking {
+    list-style-type: disc;
+  }
+
+  .img4-con-care {
+    width: 80%;
+    height: 22vw;
+    margin-bottom: 5%;
+    /* background-color: black; */
+  }
+
+  .img4-custom-care {
+    height: 120%;
+    /* width: 100%; */
+    translate: -23% -9%;
+  }
+
+  .custom-list-decor {
+    padding: 0 10% 0 5%;
+    font-size: 0.7em;
+  }
+
+  ol.custom-list-decor {
+    list-style-type: disc;
+  }
+
+  .img5-con-care {
+    width: 80%;
+    height: 18vw;
+    margin: 10% 0;
+  }
+
+  .custom-row-4 {
+    margin-bottom: 5%;
+  }
+}

@@ -1,0 +1,224 @@
+@media (max-width: 575.98px) {
+  .footer-con {
+    height: 50vw;
+    background-color: #d9d9d9;
+  }
+
+  .con-bisnis {
+    padding: 10% 0 0 0;
+  }
+
+  .img-con-footer {
+    height: 10vw;
+    width: auto;
+    overflow: hidden;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  .custom-img-footer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .custom-title-footer {
+    font-family: "Kaisei Decol", serif;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .custom-text-footer {
+    font-size: 0.6em;
+    color: #747474;
+    line-height: 150%;
+    width: 20em;
+    padding-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+  .footer-con {
+    height: 35vw;
+    background-color: #d9d9d9;
+  }
+
+  .con-bisnis {
+    padding: 8% 0 0 0;
+  }
+
+  .img-con-footer {
+    height: 8vw;
+    width: auto;
+    overflow: hidden;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  .custom-img-footer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .custom-title-footer {
+    font-family: "Kaisei Decol", serif;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .custom-text-footer {
+    font-size: 0.7em;
+    color: #747474;
+    line-height: 150%;
+    width: 20em;
+    padding-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+  .footer-con {
+    height: 45vw;
+    background-color: #d9d9d9;
+  }
+
+  .con-bisnis {
+    padding: 8% 0 0 0;
+  }
+
+  .img-con-footer {
+    height: 11vw;
+    width: auto;
+    overflow: hidden;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  .custom-img-footer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .custom-title-footer {
+    font-family: "Kaisei Decol", serif;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .custom-text-footer {
+    font-size: 1.1em;
+    color: #747474;
+    line-height: 150%;
+    width: 20em;
+    padding-bottom: 0.8em;
+  }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+  .footer-con {
+    height: 29vw;
+    background-color: #d9d9d9;
+    margin-top: 7%;
+  }
+
+  .con-bisnis {
+    padding: 5% 0 0 0;
+  }
+
+  .img-con-footer {
+    height: 7vw;
+    width: auto;
+    overflow: hidden;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  .custom-img-footer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .custom-title-footer {
+    font-family: "Kaisei Decol", serif;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .custom-text-footer {
+    font-size: 1em;
+    color: #747474;
+    line-height: 150%;
+    width: 20em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 1199.99px) and (max-width: 1399.98px) {
+  .footer-con {
+    height: 18vw;
+    background-color: #d9d9d9;
+    margin-top: 5%;
+  }
+
+  .con-bisnis {
+    padding: 3% 0 0 0;
+  }
+
+  .img-con-footer {
+    height: 4vw;
+    width: auto;
+    overflow: hidden;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  .custom-img-footer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .custom-title-footer {
+    font-family: "Kaisei Decol", serif;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .custom-text-footer {
+    font-size: 0.8em;
+    color: #747474;
+    line-height: 150%;
+    width: 20em;
+    padding-bottom: 0.9em;
+  }
+}
+
+@media (min-width: 1399.99px) {
+  .footer-con {
+    height: 17vw;
+    margin-top: 4%;
+    background-color: #d9d9d9;
+  }
+
+  .con-bisnis {
+    padding: 3% 0 0 0;
+  }
+
+  .img-con-footer {
+    height: 4vw;
+    width: auto;
+    overflow: hidden;
+    /* background-color: rgb(255, 0, 0); */
+  }
+
+  .custom-img-footer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .custom-title-footer {
+    font-family: "Kaisei Decol", serif;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .custom-text-footer {
+    font-size: 1em;
+    color: #747474;
+    line-height: 150%;
+    width: 20em;
+    padding-bottom: 0.9em;
+  }
+}
