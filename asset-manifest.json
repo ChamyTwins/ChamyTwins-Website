@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ChamyTwins-Website/static/css/main.74f571f6.css",
-    "main.js": "/ChamyTwins-Website/static/js/main.95642c5c.js",
+    "main.css": "/ChamyTwins-Website/static/css/main.f3d4cc0e.css",
+    "main.js": "/ChamyTwins-Website/static/js/main.479863d6.js",
     "static/media/6.jpg": "/ChamyTwins-Website/static/media/6.fbd401369bfa7bcbf4ec.jpg",
     "static/media/4.jpg": "/ChamyTwins-Website/static/media/4.e8e1fc15a728677bb84c.jpg",
     "static/media/BG1.jpg": "/ChamyTwins-Website/static/media/BG1.19d8cced9cc01a68fd2f.jpg",
@@ -20,11 +20,11 @@
     "static/media/Chamytwinslogo.png": "/ChamyTwins-Website/static/media/Chamytwinslogo.597abff61bc14c46f89a.png",
     "static/media/1.jpg": "/ChamyTwins-Website/static/media/1.04dcaee2cab33b909d59.jpg",
     "index.html": "/ChamyTwins-Website/index.html",
-    "main.74f571f6.css.map": "/ChamyTwins-Website/static/css/main.74f571f6.css.map",
-    "main.95642c5c.js.map": "/ChamyTwins-Website/static/js/main.95642c5c.js.map"
+    "main.f3d4cc0e.css.map": "/ChamyTwins-Website/static/css/main.f3d4cc0e.css.map",
+    "main.479863d6.js.map": "/ChamyTwins-Website/static/js/main.479863d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.74f571f6.css",
-    "static/js/main.95642c5c.js"
+    "static/css/main.f3d4cc0e.css",
+    "static/js/main.479863d6.js"
   ]
 }
