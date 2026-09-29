@@ -1,30 +1,40 @@
 {
   "files": {
-    "main.css": "/ChamyTwins-Website/static/css/main.2753d6b6.css",
-    "main.js": "/ChamyTwins-Website/static/js/main.7e9d7f55.js",
+    "main.css": "/ChamyTwins-Website/static/css/main.5d63335a.css",
+    "main.js": "/ChamyTwins-Website/static/js/main.9a8a3045.js",
     "static/media/6.jpg": "/ChamyTwins-Website/static/media/6.fbd401369bfa7bcbf4ec.jpg",
     "static/media/4.jpg": "/ChamyTwins-Website/static/media/4.e8e1fc15a728677bb84c.jpg",
     "static/media/BG1.jpg": "/ChamyTwins-Website/static/media/BG1.19d8cced9cc01a68fd2f.jpg",
     "static/media/veiled.jpg": "/ChamyTwins-Website/static/media/veiled.2ddd9b41b54bea4e2ee9.jpg",
     "static/media/5.jpg": "/ChamyTwins-Website/static/media/5.9f6596d562ad17589f72.jpg",
+    "static/media/jungle-fog.jpg": "/ChamyTwins-Website/static/media/jungle-fog.69db78dadee69cace93d.jpg",
     "static/media/2.JPG": "/ChamyTwins-Website/static/media/2.8fa2806d2672f0218193.JPG",
     "static/media/panther.JPG": "/ChamyTwins-Website/static/media/panther.60a14a93bda42c3686ef.JPG",
     "static/media/3.jpg": "/ChamyTwins-Website/static/media/3.578a7f002166123c34a4.jpg",
     "static/media/7.JPG": "/ChamyTwins-Website/static/media/7.3ce90fd6824c5f6f7de8.JPG",
     "static/media/phanter_Caresheet.JPG": "/ChamyTwins-Website/static/media/phanter_Caresheet.e3b622ec5303f946a5c5.JPG",
+    "static/media/misty-forest.jpg": "/ChamyTwins-Website/static/media/misty-forest.14640a855fad1bb633f9.jpg",
+    "static/media/ig-panther-branch.webp": "/ChamyTwins-Website/static/media/ig-panther-branch.a46a51ec4b7e4130d9ae.webp",
     "static/media/drinking.jpg": "/ChamyTwins-Website/static/media/drinking.ac6065c76439e4049dc7.jpg",
+    "static/media/ig-hatchling.jpg": "/ChamyTwins-Website/static/media/ig-hatchling.be4fd033eac9ee01b70f.jpg",
     "static/media/decor.png": "/ChamyTwins-Website/static/media/decor.84d5c81fa0f8417d3245.png",
     "static/media/uva_uvb.jpg": "/ChamyTwins-Website/static/media/uva_uvb.2f9d7c850b70f7ef95f6.jpg",
+    "static/media/ig-veiled-outdoor.webp": "/ChamyTwins-Website/static/media/ig-veiled-outdoor.68c62574aac5afc68eb6.webp",
     "static/media/cage.png": "/ChamyTwins-Website/static/media/cage.8f6aa1992738fc018658.png",
+    "static/media/monstera.jpg": "/ChamyTwins-Website/static/media/monstera.f81e469f90847341fe8c.jpg",
+    "static/media/ig-veiled-xmas.webp": "/ChamyTwins-Website/static/media/ig-veiled-xmas.0c4148984c453156ef04.webp",
     "static/media/food.png": "/ChamyTwins-Website/static/media/food.67f0caa365b386ff6550.png",
+    "static/media/ig-panther-studio.jpg": "/ChamyTwins-Website/static/media/ig-panther-studio.1234cd535e937ce9c740.jpg",
+    "static/media/ig-veiled-hand.webp": "/ChamyTwins-Website/static/media/ig-veiled-hand.b84fb03da95ff68d30a0.webp",
+    "static/media/ig-veiled-santa.webp": "/ChamyTwins-Website/static/media/ig-veiled-santa.95e0a04d7733c08279ba.webp",
     "static/media/Chamytwinslogo.png": "/ChamyTwins-Website/static/media/Chamytwinslogo.597abff61bc14c46f89a.png",
     "static/media/1.jpg": "/ChamyTwins-Website/static/media/1.04dcaee2cab33b909d59.jpg",
     "index.html": "/ChamyTwins-Website/index.html",
-    "main.2753d6b6.css.map": "/ChamyTwins-Website/static/css/main.2753d6b6.css.map",
-    "main.7e9d7f55.js.map": "/ChamyTwins-Website/static/js/main.7e9d7f55.js.map"
+    "main.5d63335a.css.map": "/ChamyTwins-Website/static/css/main.5d63335a.css.map",
+    "main.9a8a3045.js.map": "/ChamyTwins-Website/static/js/main.9a8a3045.js.map"
   },
   "entrypoints": [
-    "static/css/main.2753d6b6.css",
-    "static/js/main.7e9d7f55.js"
+    "static/css/main.5d63335a.css",
+    "static/js/main.9a8a3045.js"
   ]
 }
