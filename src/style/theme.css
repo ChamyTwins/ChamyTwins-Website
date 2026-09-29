@@ -1,0 +1,591 @@
+/* ==========================================================================
+   ChamyTwins — "Misty Canopy" theme
+   One continuous, dark and foggy rainforest scene: real photography graded
+   to deep green, drifting mist and frosted-glass panels.
+   Mobile-first: base rules target phones, min-width queries scale up.
+   ========================================================================== */
+
+:root {
+  /* Palette — deep forest greens, fog sage, a whisper of lichen */
+  --night-1000: #030b08;
+  --night-950: #06130e;
+  --night-900: #0a1c15;
+  --night-800: #10291f;
+  --night-700: #183a2d;
+  --emerald: #5e8f78;
+  --emerald-soft: #a9c9b8;
+  --lime: #d3dfc4;
+  --amber: #c8a96a;
+  --white: #f3f6f4;
+  --text: rgba(232, 238, 234, 0.9);
+  --text-dim: rgba(214, 226, 220, 0.62);
+  --text-faint: rgba(214, 226, 220, 0.4);
+
+  /* soft fog-to-lichen sheen (avatar rings) */
+  --skin: linear-gradient(100deg, #9fbcae 0%, #d3dfc4 100%);
+
+  /* Glass — frosted, not neon */
+  --glass-bg: linear-gradient(135deg, rgba(215, 230, 222, 0.09), rgba(215, 230, 222, 0.02));
+  --glass-border: rgba(215, 230, 222, 0.16);
+  --glass-shine: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --glow: 0 40px 80px -30px rgba(0, 0, 0, 0.85);
+
+  /* mute our own bright studio photos (no hue shift — true colours stay) */
+  --grade: saturate(0.78) brightness(0.84) contrast(1.06);
+
+  /* Type */
+  --font: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-giant: clamp(5rem, 2rem + 17vw, 15rem);
+  --fs-h1: clamp(2.6rem, 1.5rem + 5vw, 5.5rem);
+  --fs-h2: clamp(2.2rem, 1.4rem + 3.6vw, 4.25rem);
+  --fs-h3: clamp(1.35rem, 1.15rem + 1vw, 1.9rem);
+  --fs-lead: clamp(1.05rem, 0.98rem + 0.4vw, 1.3rem);
+  --fs-body: clamp(0.98rem, 0.95rem + 0.15vw, 1.08rem);
+  --fs-small: 0.875rem;
+  --fs-meta: 0.78rem;
+
+  /* Space & shape */
+  --gutter: clamp(1.25rem, 0.8rem + 2.5vw, 3rem);
+  --section-y: clamp(4.5rem, 3rem + 6vw, 9rem);
+  --container: 1120px;
+  --radius-sm: 14px;
+  --radius: 22px;
+  --radius-lg: clamp(24px, 1rem + 2vw, 40px);
+  --nav-h: 72px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.35s;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --nav-h: 84px;
+  }
+}
+
+/* ---------- Base ---------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+  /* the closed mobile drawer sits off-canvas to the right */
+  overflow-x: clip;
+  background: var(--night-1000);
+}
+
+body {
+  margin: 0;
+  background: var(--night-950);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-wrap: balance;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--emerald-soft);
+}
+
+a:hover {
+  color: var(--white);
+}
+
+::selection {
+  background: var(--emerald);
+  color: var(--night-1000);
+}
+
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2000;
+  padding: 0.6rem 1rem;
+  background: var(--white);
+  color: var(--night-950);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* ---------- Layout ---------- */
+
+.container-ct {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  position: relative;
+  padding-block: var(--section-y);
+}
+
+/* the whole page is one scene: a fixed canopy glow behind everything */
+.scene {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: radial-gradient(80% 40% at 50% 0%, rgba(70, 130, 100, 0.16), transparent 70%),
+    radial-gradient(60% 35% at 0% 50%, rgba(50, 110, 85, 0.1), transparent 70%),
+    radial-gradient(60% 35% at 100% 80%, rgba(70, 130, 100, 0.1), transparent 70%),
+    linear-gradient(180deg, var(--night-900) 0%, var(--night-950) 35%, var(--night-1000) 100%);
+}
+
+/* A photo that melts into the scene instead of sitting in a box */
+.melt {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  filter: sepia(0.55) hue-rotate(100deg) saturate(1) brightness(0.72) contrast(1.05);
+  mask-image: radial-gradient(75% 70% at 50% 45%, #000 20%, transparent 75%);
+  -webkit-mask-image: radial-gradient(75% 70% at 50% 45%, #000 20%, transparent 75%);
+}
+
+/* ---------- Small editorial bits ---------- */
+
+/* "First edition ....... 2025" style meta rows */
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+  font-size: var(--fs-meta);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.meta-row > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(232, 238, 234, 0.9);
+  color: var(--night-950);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.kicker {
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: clamp(0.85rem, 0.8rem + 0.4vw, 1.15rem);
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--emerald-soft);
+}
+
+.text-skin {
+  background: var(--skin);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* "A SPACE. / Unique and original" stacked heading */
+.stack-title {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.stack-title strong {
+  display: block;
+  font-size: var(--fs-h2);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.stack-title span {
+  display: block;
+  margin-top: 0.2em;
+  font-size: calc(var(--fs-h2) * 0.55);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--emerald-soft);
+}
+
+.lead-center {
+  max-width: 34rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--fs-lead);
+  color: var(--text-dim);
+}
+
+/* ---------- Glass ---------- */
+
+.glass {
+  position: relative;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px) saturate(110%);
+  -webkit-backdrop-filter: blur(20px) saturate(110%);
+  box-shadow: var(--glass-shine), var(--glow);
+}
+
+/* ---------- Buttons ---------- */
+
+.btn-ct {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 48px;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: rgba(215, 230, 222, 0.06);
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out),
+    background-color var(--dur);
+}
+
+.btn-ct:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+  background: rgba(215, 230, 222, 0.14);
+  border-color: rgba(215, 230, 222, 0.4);
+}
+
+.btn-ct i {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.btn-ct:hover i {
+  transform: translateX(3px);
+}
+
+.btn-ct--solid {
+  border-color: transparent;
+  background: var(--white);
+  color: var(--night-1000);
+  font-weight: 500;
+}
+
+.btn-ct--solid:hover {
+  background: var(--lime);
+  color: var(--night-1000);
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 500;
+  color: var(--emerald-soft);
+  text-decoration: none;
+  transition: color var(--dur);
+}
+
+.link-arrow i {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.link-arrow:hover {
+  color: var(--white);
+}
+
+.link-arrow:hover i {
+  transform: translateX(4px);
+}
+
+/* ---------- Atmosphere: light shafts, fireflies, leaves ---------- */
+
+.rays {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 110vh;
+  z-index: 0;
+  pointer-events: none;
+  background: conic-gradient(from 160deg at 62% -10%, transparent 0deg, rgba(170, 214, 192, 0.08) 8deg,
+      transparent 15deg, rgba(215, 230, 222, 0.05) 21deg, transparent 27deg, rgba(215, 230, 222, 0.04) 33deg,
+      transparent 40deg);
+  filter: blur(14px);
+  mask-image: linear-gradient(180deg, #000 20%, transparent 90%);
+  -webkit-mask-image: linear-gradient(180deg, #000 20%, transparent 90%);
+  animation: rays-sway 16s ease-in-out infinite alternate;
+  transform-origin: 62% 0;
+}
+
+@keyframes rays-sway {
+  to {
+    transform: rotate(3deg) scaleX(1.08);
+    opacity: 0.8;
+  }
+}
+
+.fireflies {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.fireflies i {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(232, 238, 234, 0.8);
+  box-shadow: 0 0 6px 1px rgba(232, 238, 234, 0.35);
+  opacity: 0;
+  animation: firefly var(--d, 9s) ease-in-out var(--delay, 0s) infinite;
+}
+
+@keyframes firefly {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  20%,
+  70% {
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(var(--dx, 30px), var(--dy, -40px));
+  }
+}
+
+/* real foliage photo (dark background) laid over the scene with
+   `lighten`, so only the leaves show — no cut-out needed */
+.foliage {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+  opacity: 0.55;
+  filter: sepia(0.3) hue-rotate(90deg) saturate(0.8) brightness(0.55) contrast(1.1) blur(var(--blur, 0px));
+  animation: foliage-sway 18s ease-in-out infinite alternate;
+}
+
+@keyframes foliage-sway {
+  to {
+    transform: translate3d(8px, -6px, 0) rotate(1.2deg);
+  }
+}
+
+/* drifting mist: two wide, blurred bands moving at different speeds */
+.fog {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.fog::before,
+.fog::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  width: 200%;
+  height: 60%;
+  background: radial-gradient(35% 45% at 20% 50%, rgba(150, 196, 174, 0.16), transparent 70%),
+    radial-gradient(30% 40% at 55% 45%, rgba(150, 196, 174, 0.12), transparent 70%),
+    radial-gradient(35% 50% at 85% 55%, rgba(150, 196, 174, 0.14), transparent 70%);
+  filter: blur(30px);
+  animation: fog-drift 60s linear infinite;
+}
+
+.fog::before {
+  top: 35%;
+}
+
+.fog::after {
+  top: 55%;
+  opacity: 0.8;
+  animation-duration: 90s;
+  animation-direction: reverse;
+}
+
+@keyframes fog-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(25%);
+  }
+}
+
+/* ---------- Page header (inner pages) ---------- */
+
+.page-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: calc(var(--nav-h) + clamp(2.5rem, 2rem + 4vw, 5rem)) 0 clamp(2.5rem, 2rem + 3vw, 4rem);
+  text-align: center;
+}
+
+.page-hero > .container-ct {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero__bg {
+  opacity: 0.45;
+  mask-image: linear-gradient(180deg, #000 40%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 40%, transparent 100%);
+}
+
+.page-hero__text {
+  animation: rise-in 0.9s var(--ease-out) both;
+}
+
+.page-hero p.page-hero__lead {
+  max-width: 640px;
+  margin: clamp(3rem, 2rem + 3vw, 4.5rem) auto 0;
+  font-size: var(--fs-lead);
+  color: var(--text-dim);
+}
+
+/* "Blue / Ocean." — a huge word with a smaller one overlapping its foot */
+.duo-title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  line-height: 0.85;
+  text-align: left;
+}
+
+.duo-title__big {
+  display: block;
+  font-size: var(--fs-giant);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: var(--white);
+  text-shadow: 0 10px 60px rgba(0, 0, 0, 0.45), 0 0 120px rgba(215, 230, 222, 0.18);
+}
+
+.duo-title__small {
+  position: absolute;
+  left: 0.08em;
+  bottom: -0.78em;
+  font-size: calc(var(--fs-giant) * 0.3);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--emerald-soft);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+.page-hero .duo-title__big {
+  font-size: clamp(3.6rem, 1.5rem + 11vw, 9.5rem);
+}
+
+.page-hero .duo-title__small {
+  font-size: clamp(1.6rem, 0.8rem + 4vw, 3.6rem);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .fireflies,
+  .fog {
+    display: none;
+  }
+}

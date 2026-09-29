@@ -2,10 +2,10 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
-import App from "./App";
+// Bootstrap first, so the theme styles imported by App win
 import "bootstrap/dist/css/bootstrap.min.css";
+import App from "./App";
 import axios from "axios";
-import bootstrap from "bootstrap";
 
 axios.defaults.withCredentials = true;
 

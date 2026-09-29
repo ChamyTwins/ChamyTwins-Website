@@ -1,1369 +1,431 @@
-@media (max-width: 575.98px) {
-  .con1-hmpg {
-    height: 170vw;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
-    background-position: 0, 45%;
-    /* background-color: transparent; */
-    background-size: auto 90%;
-  }
+/* ==========================================================================
+   Homepage — Misty Canopy
+   ========================================================================== */
 
-  .title-con1 {
-    width: 90%;
-  }
+/* ---------- Hero ---------- */
 
-  .title-hmpg1 {
-    font-size: 2.5em;
-    padding: 0 0 4% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.home-hero {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: calc(var(--nav-h) + 1rem) 0 clamp(2.5rem, 2rem + 3vw, 4rem);
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--night-1000);
+}
 
-  .text-hmpg1 {
-    font-size: 1em;
-    padding: 0;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-  }
+/* the hero photo: full chameleon, never cropped or upscaled */
+.home-hero__photo {
+  position: absolute;
+  z-index: 0;
+  top: calc(var(--nav-h) + 3rem);
+  left: 50%;
+  width: min(100vw, 700px);
+  height: auto;
+  translate: -50% 0;
+  mix-blend-mode: lighten;
+  /* soft edges on every side so the photo's frame never shows */
+  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 94%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 10%, #000 76%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 94%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 10%, #000 76%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  animation: photo-in 2s var(--ease-out) both;
+}
 
-  .con2-hmpg {
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .title-hmpg2 {
-    font-size: 2.5em;
-    padding: 10% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg2 {
-    font-size: 1.1em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg2 {
-    font-size: 1em;
-    padding: 0 5% 7% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg3 {
-    font-size: 1em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .con3-hmpg {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
-
-  .title-hmpg3 {
-    font-size: 1.7em;
-    padding: 10% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg3 {
-    font-size: 1.1em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .img2-con-hmpg {
-    width: 90%;
-    height: 55vw;
-    border-radius: 15px;
-    background-color: black;
-  }
-
-  .img2-custom {
-    width: 100%;
-  }
-
-  .img3-custom {
-    width: 100%;
-    translate: 0 -30%;
-    opacity: 90%;
-  }
-
-  .text-hmpg4 {
-    font-size: 1em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .sub-title-hmpg4 {
-    font-size: 1.1em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg5 {
-    font-size: 1em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg6-left {
-    font-size: 1em;
-    padding: 0% 5% 10% 5%;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-  }
-
-  .text-hmpg6-right {
-    font-size: 1em;
-    padding: 0% 5% 10% 5%;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-  }
-
-  .custom-link {
-    text-decoration: none;
-  }
-
-  .con4-hmpg {
-    height: auto;
-    background-color: rgb(253, 253, 253);
-  }
-
-  .title-hmpg4 {
-    padding: 10% 5% 5% 5%;
-    font-size: 1.1em;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con-form-hmpg {
-    height: auto;
-    width: 100%;
-  }
-
-  .custom-form-hmpg {
-    width: 75%;
-  }
-
-  .custom-box-hmpg {
-    margin: 5% 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 4%;
-    border-radius: 5px;
-    border: 1px solid #ff9355;
-    color: black;
-  }
-
-  .custom-box-hmpg::placeholder {
-    font-size: 1em;
-    color: #898989;
-  }
-
-  .custom-button-hmpg {
-    background-color: white;
-    padding: 3% 13%;
-    font-size: 1em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 25% 0;
-  }
-
-  .custom-button-hmpg-load {
-    background-color: white;
-    padding: 3% 13%;
-    font-size: 1em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 25% 0;
-  }
-
-  .custom-button-hmpg:hover {
-    background-color: #fc5c02;
-    color: white;
-    transition-duration: 0.3s;
+@keyframes photo-in {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
   }
 }
 
-@media (min-width: 575.99px) and (max-width: 767.98px) {
-  .con1-hmpg {
-    height: 170vw;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
-    background-position: 0, 45%;
-    /* background-color: transparent; */
-    background-size: cover;
-  }
-
-  .title-con1 {
-    width: 90%;
-  }
-
-  .title-hmpg1 {
-    font-size: 4em;
-    padding: 0 0 4% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg1 {
-    font-size: 1.5em;
-    padding: 0;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con2-hmpg {
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .title-hmpg2 {
-    font-size: 3em;
-    padding: 10% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg2 {
-    font-size: 1.5em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg2 {
-    font-size: 1.2em;
-    padding: 0 5% 7% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg3 {
-    font-size: 1.2em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .con3-hmpg {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
-
-  .title-hmpg3 {
-    font-size: 2em;
-    padding: 10% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg3 {
-    font-size: 1.5em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .img2-con-hmpg {
-    width: 90%;
-    height: 55vw;
-    border-radius: 15px;
-    background-color: black;
-  }
-
-  .img2-custom {
-    width: 100%;
-  }
-
-  .img3-custom {
-    width: 100%;
-    translate: 0 -30%;
-    opacity: 90%;
-  }
-
-  .text-hmpg4 {
-    font-size: 1.2em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .sub-title-hmpg4 {
-    font-size: 1.5em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg5 {
-    font-size: 1.2em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg6-left {
-    font-size: 1.2em;
-    padding: 0% 5% 10% 5%;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-  }
-
-  .text-hmpg6-right {
-    font-size: 1.2em;
-    padding: 0% 5% 10% 5%;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-  }
-
-  .custom-link {
-    text-decoration: none;
-  }
-
-  .con4-hmpg {
-    height: auto;
-    background-color: rgb(253, 253, 253);
-  }
-
-  .title-hmpg4 {
-    padding: 10% 5% 5% 5%;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con-form-hmpg {
-    height: auto;
-    width: 100%;
-  }
-
-  .custom-form-hmpg {
-    width: 75%;
-  }
-
-  .custom-box-hmpg {
-    margin: 3% 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 3.5%;
-    border-radius: 5px;
-    border: 1px solid #ff9355;
-    color: black;
-  }
-
-  .custom-box-hmpg::placeholder {
-    font-size: 1.2em;
-    color: #898989;
-  }
-
-  .custom-button-hmpg {
-    background-color: white;
-    padding: 2% 9%;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 25% 0;
-  }
-
-  .custom-button-hmpg-load {
-    background-color: #fc5c02;
-    padding: 2% 9%;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: white;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 25% 0;
-  }
-
-  .custom-button-hmpg:hover {
-    background-color: #fc5c02;
-    color: white;
-    transition-duration: 0.3s;
-  }
+.home-hero__vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(3, 11, 8, 0.55) 0%, transparent 22%),
+    linear-gradient(0deg, var(--night-900) 0%, transparent 35%);
 }
 
-@media (min-width: 767.99px) and (max-width: 991.98px) {
-  .con1-hmpg {
-    height: 100vh;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
-    background-position: center;
-    /* background-color: transparent; */
-    background-size: cover;
-  }
-
-  .title-con1 {
-    width: 90%;
-  }
-
-  .title-hmpg1 {
-    font-size: 4.5em;
-    padding: 0 0 4% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg1 {
-    font-size: 1.8em;
-    padding: 0;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con2-hmpg {
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .title-hmpg2 {
-    font-size: 3.5em;
-    padding: 10% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg2 {
-    font-size: 2em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg2 {
-    font-size: 1.8em;
-    padding: 0 5% 7% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg3 {
-    font-size: 1.8em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .con3-hmpg {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
-
-  .title-hmpg3 {
-    font-size: 3.5em;
-    padding: 8% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg3 {
-    font-size: 2em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .img2-con-hmpg {
-    width: 95%;
-    height: 60vw;
-    border-radius: 30px;
-    background-color: black;
-  }
-
-  .img2-custom {
-    width: 100%;
-  }
-
-  .img3-custom {
-    width: 100%;
-    translate: 0 -30%;
-    opacity: 90%;
-  }
-
-  .text-hmpg4 {
-    font-size: 1.8em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .sub-title-hmpg4 {
-    font-size: 2em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg5 {
-    font-size: 1.8em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg6-left {
-    font-size: 1.8em;
-    padding: 0% 5% 10% 5%;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-  }
-
-  .text-hmpg6-right {
-    font-size: 1.8em;
-    padding: 0% 5% 10% 5%;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-  }
-
-  .custom-link {
-    text-decoration: none;
-  }
-
-  .con4-hmpg {
-    height: auto;
-    background-color: rgb(253, 253, 253);
-  }
-
-  .title-hmpg4 {
-    padding: 7% 5% 5% 5%;
-    font-size: 2.4em;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con-form-hmpg {
-    height: auto;
-    width: 100%;
-  }
-
-  .custom-form-hmpg {
-    width: 75%;
-  }
-
-  .custom-box-hmpg {
-    margin: 5% 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 4%;
-    border-radius: 5px;
-    border: 1px solid #ff9355;
-    color: black;
-  }
-
-  .custom-box-hmpg::placeholder {
-    font-size: 1.5em;
-    color: #898989;
-  }
-
-  .custom-button-hmpg {
-    background-color: white;
-    padding: 3% 13%;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 10px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 18% 0;
-  }
-
-  .custom-button-hmpg-load {
-    background-color: white;
-    padding: 3% 13%;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 10px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 18% 0;
-  }
-
-  .custom-button-hmpg:hover {
-    background-color: #fc5c02;
-    color: white;
-    transition-duration: 0.3s;
-  }
+.home-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 991.99px) and (max-width: 1199.98px) {
-  .con1-hmpg {
-    height: 100vh;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
-    background-position: center;
-    /* background-color: transparent; */
-    background-size: cover;
-  }
+.home-hero__center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* clears the photo above (its height is 2/3 of its width) */
+  padding-top: min(58vw, 400px);
+  text-align: center;
+}
 
-  .title-con1 {
-    width: 90%;
-  }
+.home-hero__center > * {
+  animation: rise-in 1.2s var(--ease-out) both;
+}
 
-  .title-hmpg1 {
-    font-size: 4.5em;
-    padding: 0 0 4% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.home-hero__center > :nth-child(2) {
+  animation-delay: 0.15s;
+}
 
-  .text-hmpg1 {
-    font-size: 1.8em;
-    padding: 0;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-  }
+.home-hero__center > :nth-child(3) {
+  animation-delay: 0.3s;
+}
 
-  .con2-hmpg {
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
+.home-hero__center > :nth-child(4) {
+  animation-delay: 0.45s;
+}
 
-  .title-hmpg2 {
-    font-size: 3.5em;
-    padding: 10% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.home-hero__sign {
+  margin: clamp(3.5rem, 2.5rem + 4vw, 6rem) 0 0;
+  font-size: clamp(1.15rem, 1rem + 0.8vw, 1.6rem);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  color: var(--text);
+}
 
-  .sub-title-hmpg2 {
-    font-size: 2em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg2 {
-    font-size: 1.5em;
-    padding: 0 5% 7% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .text-hmpg3 {
-    font-size: 1.5em;
-    padding: 0 5% 10% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .con3-hmpg {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
-
-  .title-hmpg3 {
-    font-size: 3.5em;
-    padding: 5% 0 10% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title-hmpg3 {
-    font-size: 2em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .img2-con-hmpg {
-    width: 95%;
-    height: 30vw;
-    border-radius: 30px;
-    background-color: black;
-  }
-
-  .img2-custom {
-    width: 100%;
-  }
-
-  .img3-custom {
-    width: 100%;
-    translate: 0 -30%;
-    opacity: 90%;
-  }
-
-  .text-hmpg4 {
-    font-size: 1.2em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: center;
-    hyphens: auto;
-    position: relative;
-    left: 0;
+@media (min-width: 992px) {
+  /* photo on the right, vertically centred; capped at 1080px (below its
+     1616px native width) so it's never stretched */
+  .home-hero__photo {
     top: 50%;
-    transform: translateY(50%);
+    left: auto;
+    right: 0;
+    width: min(66vw, 1080px);
+    translate: 4% -46%;
   }
 
-  .sub-title-hmpg4 {
-    font-size: 2em;
-    padding: 0 0% 10% 5%;
-    margin: 0;
-    font-weight: bold;
+  .home-hero__center {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0;
     text-align: left;
-    font-family: "Kaisei Decol", serif;
   }
 
-  .text-hmpg5 {
-    font-size: 1.2em;
-    padding: 10% 5% 3% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: center;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50%;
-    transform: translateY(50%);
-  }
-
-  .text-hmpg6-left {
-    font-size: 1.2em;
-    padding: 7% 5% 10% 5%;
-    text-align: center;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    transform: translateY(50%);
-  }
-
-  .text-hmpg6-right {
-    font-size: 1.2em;
-    padding: 7% 5% 10% 5%;
-    text-align: center;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    transform: translateY(50%);
-  }
-
-  .custom-link {
-    text-decoration: none;
-  }
-
-  .con4-hmpg {
-    height: auto;
-    background-color: rgb(253, 253, 253);
-  }
-
-  .title-hmpg4 {
-    padding: 10% 5% 5% 5%;
-    font-size: 2.4em;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con-form-hmpg {
-    height: auto;
-    width: 100%;
-  }
-
-  .custom-form-hmpg {
-    width: 75%;
-  }
-
-  .custom-box-hmpg {
-    margin: 3% 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 3%;
-    border-radius: 5px;
-    border: 1px solid #ff9355;
-    color: black;
-  }
-
-  .custom-box-hmpg::placeholder {
-    font-size: 1.5em;
-    color: #898989;
-  }
-
-  .custom-button-hmpg {
-    background-color: white;
-    padding: 1.5% 6%;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 10px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 18% 0;
-  }
-
-  .custom-button-hmpg-load {
-    background-color: white;
-    padding: 1.5% 6%;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 10px;
-    border: 2px solid #fc5c02;
-    margin: 8% 0 18% 0;
-  }
-
-  .custom-button-hmpg:hover {
-    background-color: #fc5c02;
-    color: white;
-    transition-duration: 0.3s;
+  .home-hero__center .duo-title__big {
+    font-size: clamp(6rem, 2rem + 10vw, 12rem);
   }
 }
 
-@media (min-width: 1199.99px) and (max-width: 1399.98px) {
-  .con1-hmpg {
-    height: 100vh;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
-    background-position: center;
-    /* background-color: transparent; */
-    background-size: 100% auto;
-  }
+/* ---------- Facts panel ---------- */
 
-  .title-con1 {
-    width: 90%;
-  }
+.facts {
+  position: relative;
+  padding-block: clamp(2rem, 1rem + 4vw, 4rem) var(--section-y);
+}
 
-  .title-hmpg1 {
-    font-size: 4em;
-    padding: 0 0 2% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.facts__wrap {
+  max-width: calc(860px + var(--gutter) * 2);
+}
 
-  .text-hmpg1 {
-    font-size: 1.5em;
-    padding: 0;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-  }
+.facts__meta {
+  margin-bottom: 0.9rem;
+}
 
-  .con2-hmpg {
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
+.facts__meta--end {
+  margin: 1.75rem 0 0;
+}
 
-  .title-hmpg2 {
-    font-size: 3em;
-    padding: 7% 0 6% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.facts__stack {
+  position: relative;
+}
 
-  .sub-title-hmpg2 {
-    font-size: 1.5em;
-    padding: 0 5% 5% 5%;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+/* second pane peeking out below, like stacked sheets of glass */
+.facts__ghost {
+  position: absolute;
+  inset: 12% 3% -7% 3%;
+  border: 1px solid rgba(215, 230, 222, 0.18);
+  border-radius: var(--radius-lg);
+  background: rgba(190, 212, 200, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
 
-  .text-hmpg2 {
-    font-size: 1.2em;
-    padding: 0 5% 3% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
+.facts__panel {
+  overflow: hidden;
+  padding: clamp(2rem, 1.5rem + 3vw, 3.5rem) clamp(1.25rem, 1rem + 2vw, 3rem);
+  border-width: 2px;
+  border-width: 1px;
+  box-shadow: var(--glass-shine), 0 50px 90px -35px rgba(0, 0, 0, 0.95);
+}
 
-  .text-hmpg3 {
-    font-size: 1.2em;
-    padding: 0 5% 3% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
+.facts__photo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center 45%;
+  opacity: 0.6;
+  filter: sepia(0.55) hue-rotate(100deg) saturate(1) brightness(0.7);
+}
 
-  .con3-hmpg {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
+.facts__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 16, 13, 0.35), rgba(7, 16, 13, 0.7));
+}
 
-  .title-hmpg3 {
-    font-size: 3em;
-    padding: 5% 0 7% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.facts__list {
+  display: grid;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
 
-  .sub-title-hmpg3 {
-    font-size: 1.5em;
-    padding: 0 0 0 10%;
-    margin-bottom: 7%;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
+.facts__num {
+  display: block;
+  font-size: clamp(2.75rem, 2rem + 3vw, 4.25rem);
+  font-weight: 200;
+  line-height: 1;
+  color: var(--white);
+}
 
-  .sub-title-hmpg4 {
-    font-size: 1.5em;
-    padding: 0 10% 0 0;
-    margin-bottom: 7%;
-    font-weight: bold;
-    text-align: right;
-    font-family: "Kaisei Decol", serif;
-  }
+.facts__text {
+  display: block;
+  max-width: 20ch;
+  margin: 0.6rem auto 0;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: var(--text);
+}
 
-  .text-hmpg5 {
-    font-size: 1.2em;
-    padding: 10% 10% 3% 10%;
-    font-family: "Kaisei Decol", serif;
-    text-align: center;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .text-hmpg6-left {
-    font-size: 1.2em;
-    padding: 6% 5% 10% 5%;
-    text-align: center;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .text-hmpg6-right {
-    font-size: 1.2em;
-    padding: 6% 5% 10% 5%;
-    text-align: center;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .custom-col-hmpg {
-    height: 35vw;
-    /* background-color: red; */
-    width: 80%;
-  }
-
-  .img2-con-hmpg {
-    width: 80%;
-    height: 26vw;
-    border-radius: 30px;
-    background-color: black;
-    /* margin-bottom: 20vh; */
-  }
-
-  .img2-custom {
-    height: 100%;
-  }
-
-  .img3-custom {
-    width: 100%;
-    translate: 0 -30%;
-    opacity: 90%;
-  }
-
-  .text-hmpg4 {
-    font-size: 1.2em;
-    padding: 10% 10% 3% 10%;
-    font-family: "Kaisei Decol", serif;
-    text-align: center;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .custom-link {
-    text-decoration: none;
-  }
-
-  .con4-hmpg {
-    height: auto;
-    background-color: rgb(253, 253, 253);
-  }
-
-  .title-hmpg4 {
-    padding: 5% 5% 5% 5%;
-    font-size: 2.4em;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con-form-hmpg {
-    height: auto;
-    width: 100%;
-  }
-
-  .custom-form-hmpg {
-    width: 60%;
-  }
-
-  .custom-box-hmpg {
-    margin: 3% 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 2.5%;
-    border-radius: 5px;
-    border: 1px solid #ff9355;
-    color: black;
-  }
-
-  .custom-box-hmpg::placeholder {
-    font-size: 1.2em;
-    color: #898989;
-  }
-
-  .custom-button-hmpg {
-    background-color: white;
-    padding: 1% 5%;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 6% 0 10% 0;
-  }
-
-  .custom-button-hmpg-load {
-    background-color: white;
-    padding: 1% 5%;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 6% 0 10% 0;
-  }
-
-  .custom-button-hmpg:hover {
-    background-color: #fc5c02;
-    color: white;
-    transition-duration: 0.3s;
+@media (min-width: 640px) {
+  .facts__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }
 
-@media (min-width: 1399.99px) {
-  .con1-hmpg {
-    height: 100vh;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("C:\Users\User\Documents\chamytwins\frontend\src\assets\images\BG1.jpg");
-    background-position: center;
-    /* background-color: transparent; */
-    background-size: 100% auto;
+/* ---------- About ---------- */
+
+.about {
+  padding-top: 0;
+}
+
+.about__foliage {
+  width: min(60vw, 640px);
+  aspect-ratio: 16 / 9;
+  right: -22%;
+  top: -10%;
+  rotate: -20deg;
+  opacity: 0.4;
+  --blur: 3px;
+}
+
+.about__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* ---------- Tilted glass cards ---------- */
+
+.cards-section {
+  padding-top: 0;
+}
+
+.tilt-cards {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.tilt-card {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin-inline: auto;
+  aspect-ratio: 4 / 5;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.tilt-card__ghost,
+.tilt-card__face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  transition: transform 0.6s var(--ease-out), box-shadow 0.6s var(--ease-out);
+}
+
+.tilt-card__ghost {
+  border: 1px solid rgba(215, 230, 222, 0.3);
+  background: rgba(190, 212, 200, 0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transform: rotate(-7deg) translate(-6px, 4px);
+}
+
+.tilt-card__face {
+  overflow: hidden;
+  border-width: 2px;
+  border-radius: var(--radius);
+  transform: rotate(2deg);
+}
+
+.tilt-card__face img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  filter: var(--grade);
+  transition: transform 1s var(--ease-out), opacity 0.6s, filter 0.6s;
+}
+
+.tilt-card__face::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(70% 50% at 50% 0%, rgba(215, 230, 222, 0.14), transparent 70%),
+    linear-gradient(180deg, rgba(7, 16, 13, 0.1) 25%, rgba(7, 16, 13, 0.9) 100%);
+}
+
+.tilt-card__body {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.25rem 1.25rem;
+  text-align: center;
+}
+
+.tilt-card__title {
+  font-size: clamp(1.8rem, 1.5rem + 1vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.tilt-card__latin {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--emerald-soft);
+}
+
+.tilt-card__text {
+  margin-top: 0.6rem;
+  max-width: 24ch;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.tilt-card__num {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.tilt-card:hover .tilt-card__face,
+.tilt-card:focus-visible .tilt-card__face {
+  transform: rotate(0deg) translateY(-8px);
+  box-shadow: var(--glass-shine), 0 50px 80px -30px rgba(0, 0, 0, 0.95);
+}
+
+.tilt-card:hover .tilt-card__ghost {
+  transform: rotate(-11deg) translate(-12px, 8px);
+}
+
+.tilt-card:hover img {
+  transform: scale(1.07);
+  opacity: 0.95;
+  filter: saturate(0.9) brightness(0.9);
+}
+
+@media (min-width: 768px) {
+  .tilt-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 1rem + 2vw, 3rem);
   }
 
-  .title-con1 {
-    width: 90%;
+  /* middle card sits a touch higher, like the reference */
+  .tilt-cards > li:nth-child(2) .tilt-card {
+    margin-top: -1.5rem;
   }
 
-  .title-hmpg1 {
-    font-size: 4.5em;
-    padding: 0 0 2% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
+  .tilt-cards > li:nth-child(2) .tilt-card__ghost {
+    transform: rotate(5deg) translate(6px, 4px);
   }
 
-  .text-hmpg1 {
-    font-size: 2em;
-    padding: 0;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
+  .tilt-cards > li:nth-child(2) .tilt-card__face {
+    transform: rotate(-1.5deg);
   }
+}
 
-  .con2-hmpg {
-    height: auto;
-    background-color: rgb(255, 255, 255);
-  }
+/* ---------- Join / contact ---------- */
 
-  .title-hmpg2 {
-    font-size: 3.5em;
-    padding: 7% 0 6% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.join {
+  padding-top: calc(var(--section-y) * 0.5);
+  padding-bottom: clamp(6rem, 4rem + 8vw, 11rem);
+  isolation: isolate;
+}
 
-  .sub-title-hmpg2 {
-    font-size: 2em;
-    padding: 0 5% 5% 5%;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.join__photo {
+  top: 10%;
+  opacity: 0.5;
+  background-position: center 40%;
+  mask-image: radial-gradient(70% 65% at 50% 70%, #000 10%, transparent 75%);
+  -webkit-mask-image: radial-gradient(70% 65% at 50% 70%, #000 10%, transparent 75%);
+}
 
-  .text-hmpg2 {
-    font-size: 1.5em;
-    padding: 0 5% 3% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
+.join__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 
-  .text-hmpg3 {
-    font-size: 1.5em;
-    padding: 0 5% 3% 5%;
-    margin: 0;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
+.join__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 3rem;
+}
 
-  .con3-hmpg {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
+.join__dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  animation: dot-pulse 2.4s ease-in-out infinite;
+}
 
-  .title-hmpg3 {
-    font-size: 3.5em;
-    padding: 5% 0 7% 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
+.join__dots span:nth-child(2) {
+  animation-delay: 0.3s;
+}
 
-  .sub-title-hmpg3 {
-    font-size: 2em;
-    padding: 0 0 0 10%;
-    margin-bottom: 7%;
-    font-weight: bold;
-    text-align: left;
-    font-family: "Kaisei Decol", serif;
-  }
+.join__dots span:nth-child(3) {
+  opacity: 0.5;
+  animation-delay: 0.6s;
+}
 
-  .sub-title-hmpg4 {
-    font-size: 2em;
-    padding: 0 10% 0 0;
-    margin-bottom: 7%;
-    font-weight: bold;
-    text-align: right;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .text-hmpg5 {
-    font-size: 1.5em;
-    padding: 10% 10% 3% 10%;
-    font-family: "Kaisei Decol", serif;
-    text-align: center;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .text-hmpg6-left {
-    font-size: 1.5em;
-    padding: 6% 5% 10% 5%;
-    text-align: center;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .text-hmpg6-right {
-    font-size: 1.5em;
-    padding: 6% 5% 10% 5%;
-    text-align: center;
-    font-family: "Kaisei Decol", serif;
-    color: #2b8cff;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .custom-col-hmpg {
-    height: 35vw;
-    /* background-color: red; */
-    width: 80%;
-  }
-
-  .img2-con-hmpg {
-    width: 80%;
-    height: 26vw;
-    background-color: black;
-    border-radius: 35px;
-    /* margin-bottom: 20vh; */
-  }
-
-  .img2-custom {
-    height: 100%;
-  }
-
-  .img3-custom {
-    width: 100%;
-    translate: 0 -30%;
-    opacity: 90%;
-  }
-
-  .text-hmpg4 {
-    font-size: 1.5em;
-    padding: 10% 10% 3% 10%;
-    font-family: "Kaisei Decol", serif;
-    text-align: center;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50;
-    transform: translateY(50%);
-  }
-
-  .custom-link {
-    text-decoration: none;
-  }
-
-  .con4-hmpg {
-    height: auto;
-    background-color: rgb(253, 253, 253);
-  }
-
-  .title-hmpg4 {
-    padding: 5% 5% 5% 5%;
-    font-size: 2.4em;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .con-form-hmpg {
-    height: auto;
-    width: 100%;
-  }
-
-  .custom-form-hmpg {
-    width: 60%;
-  }
-
-  .custom-box-hmpg {
-    margin: 2% 0;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 2%;
-    border-radius: 5px;
-    border: 1px solid #ff9355;
-    color: black;
-  }
-
-  .custom-box-hmpg::placeholder {
-    font-size: 1.3em;
-    color: #898989;
-  }
-
-  .custom-button-hmpg {
-    background-color: white;
-    padding: 0.7% 3%;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 6% 0 10% 0;
-  }
-
-  .custom-button-hmpg-load {
-    background-color: white;
-    padding: 0.7% 3%;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fc5c02;
-    border-radius: 5px;
-    border: 2px solid #fc5c02;
-    margin: 6% 0 10% 0;
-  }
-
-  .custom-button-hmpg:hover {
-    background-color: #fc5c02;
-    color: white;
-    transition-duration: 0.3s;
+@keyframes dot-pulse {
+  50% {
+    transform: scale(0.7);
+    opacity: 0.6;
   }
 }

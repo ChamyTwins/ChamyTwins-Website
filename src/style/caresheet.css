@@ -1,872 +1,371 @@
-@media (max-width: 575.98px) {
-  .con1-care {
-    height: auto;
+/* ==========================================================================
+   Caresheet — infographic poster
+   A big title with a real chameleon photo, then a bento grid of frosted panels (one per care topic).
+   ========================================================================== */
+
+/* ---------- Poster header ---------- */
+
+.care-head {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: calc(var(--nav-h) + clamp(1.5rem, 1rem + 3vw, 3.5rem)) 0 clamp(2rem, 1.5rem + 2vw, 3rem);
+}
+
+/* studio shot on black — `lighten` drops the black into the page, so the
+   chameleon sits on the dark green like a cut-out */
+.care-head__photo {
+  position: absolute;
+  z-index: 0;
+  inset: calc(var(--nav-h) + 4rem) -20% auto 10%;
+  aspect-ratio: 3 / 2;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: lighten;
+  opacity: 0.55;
+  filter: saturate(0.8) brightness(0.9) contrast(1.05);
+  mask-image: radial-gradient(60% 60% at 50% 50%, #000 50%, transparent 80%);
+  -webkit-mask-image: radial-gradient(60% 60% at 50% 50%, #000 50%, transparent 80%);
+}
+
+.care-head__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.care-head__text {
+  max-width: 560px;
+  animation: rise-in 0.9s var(--ease-out) both;
+}
+
+.care-head__title {
+  margin: 0;
+  font-size: clamp(3rem, 1.2rem + 8vw, 7.5rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+}
+
+.care-head__sub {
+  margin: 0.6rem 0 1.5rem;
+  font-size: clamp(1.4rem, 1rem + 1.6vw, 2.2rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--emerald-soft);
+}
+
+.care-head__lead {
+  max-width: 34ch;
+  font-size: var(--fs-lead);
+  color: var(--text);
+}
+
+@media (min-width: 992px) {
+  .care-head {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
   }
 
-  .title1-care {
-    font-size: 1.9em;
-    margin: 5% 5% 0% 5%;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title1-care {
-    font-size: 1em;
-    margin: 10% 5% 10% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .sub-title3-care {
-    font-size: 1em;
-    margin: 10% 5% 10% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .img1-con-care {
-    width: 90%;
-    height: 55vw;
-    border-radius: 15px;
-    background-color: black;
-  }
-
-  .img1-custom-care {
-    width: 100%;
-  }
-
-  .con2-care {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .list-group-custom {
-    padding: 0 8%;
-  }
-
-  .custom-row {
-    margin: 0 5%;
-    padding: 10% 0;
-    /* background-color: red; */
-  }
-
-  .img2-con-care {
-    width: 100%;
-    height: 50vw;
-    /* background-color: black; */
-  }
-
-  .img2-custom-care {
-    /* width: 100%; */
-    height: 100%;
-  }
-
-  .img3-con-care {
-    width: 80%;
-    height: 45vw;
-    border-radius: 15px;
-    margin-bottom: 5%;
-  }
-
-  .img3-custom-care {
-    width: 100%;
-    translate: 0 -10%;
-  }
-
-  ol.custom-list {
-    list-style-type: disc;
-  }
-
-  .custom-list {
-    padding: 0 8% 0 5%;
-  }
-
-  .sub-title2-care {
-    font-weight: bold;
-    margin: 5% 0 0 10%;
-  }
-
-  .custom-li {
-    padding: 3% 0;
-    font-size: 0.9em;
-  }
-
-  .custom-list-drinking {
-    /* padding: 0 0 0 18%; */
-    /* background-color: black; */
-    width: 80%;
-  }
-
-  ol.custom-list-drinking {
-    list-style-type: disc;
-  }
-
-  .img4-con-care {
-    width: 100%;
-    height: 80vw;
-    margin-bottom: 5%;
-  }
-
-  .img4-custom-care {
-    height: 100%;
-    width: 95%;
-    /* translate: 0 -15%; */
-  }
-
-  .custom-list-decor {
-    /* background-color: black; */
-    width: 80%;
-  }
-
-  ol.custom-list-decor {
-    list-style-type: disc;
-  }
-
-  .img5-con-care {
-    width: 80%;
-    height: 50vw;
-    margin-bottom: 5%;
+  .care-head__photo {
+    inset: 8% -8% auto 34%;
+    opacity: 0.85;
   }
 }
 
-@media (min-width: 575.99px) and (max-width: 767.98px) {
-  .con1-care {
-    height: auto;
+/* ---------- Bento board ---------- */
+
+.care-board {
+  padding-top: clamp(1rem, 0.5rem + 2vw, 2rem);
+}
+
+.bento {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  border-radius: var(--radius);
+}
+
+.info-panel__title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem);
+  font-weight: 500;
+}
+
+.info-panel__title i {
+  font-size: 0.85em;
+  color: var(--emerald-soft);
+}
+
+.info-panel__title--caps {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--emerald-soft);
+}
+
+.info-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.info-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--emerald-soft);
+}
+
+.info-list strong {
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* ----- "Know your chameleon" ----- */
+
+.know {
+  padding-bottom: 0;
+}
+
+.know__species {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.know__species li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  background: rgba(215, 230, 222, 0.04);
+}
+
+.know__species strong {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.know__species em {
+  font-size: 0.9rem;
+  color: var(--emerald-soft);
+}
+
+.know__species span {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+/* studio photo on black, blended into the panel */
+.know__photo {
+  display: block;
+  width: calc(100% + 2 * clamp(1.25rem, 1rem + 1vw, 1.75rem));
+  max-width: none;
+  margin: 1rem calc(-1 * clamp(1.25rem, 1rem + 1vw, 1.75rem)) 0;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: center 55%;
+  mix-blend-mode: lighten;
+  filter: var(--grade);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 35%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 35%);
+}
+
+/* ----- care topics ----- */
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.topic__media {
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 8px);
+  background: var(--night-800);
+}
+
+.topic__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: var(--grade);
+  transition: transform 1s var(--ease-out);
+}
+
+.topic:hover .topic__media img {
+  transform: scale(1.04);
+}
+
+/* product shots have white backgrounds — `multiply` drops the white
+   into a pale fog-coloured plate */
+.topic__media.is-product {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: radial-gradient(circle at 50% 40%, #d6e0da 0%, #a9b8b0 100%);
+}
+
+.topic__media.is-product img {
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: saturate(0.75) contrast(1.05);
+}
+
+.topic__num {
+  margin: 0 0 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--text-faint);
+}
+
+/* ----- ask panel with photo strip ----- */
+
+.ask {
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.ask__text p {
+  max-width: 44ch;
+  margin-bottom: 1.25rem;
+  color: var(--text-dim);
+}
+
+.ask__strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ask__strip img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  filter: var(--grade);
+}
+
+.care-slogan {
+  margin: clamp(2.5rem, 2rem + 3vw, 4rem) 0 0;
+  text-align: center;
+  font-size: clamp(1rem, 0.9rem + 0.6vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--emerald-soft);
+}
+
+/* ---------- Grid placement ---------- */
+
+@media (min-width: 768px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 
-  .title1-care {
-    font-size: 2.5em;
-    margin: 5% 5% 0% 5%;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
+  .know,
+  .ask,
+  .bento--wide {
+    grid-column: 1 / -1;
   }
 
-  .sub-title1-care {
-    font-size: 1.2em;
-    margin: 10% 5% 10% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
+  /* wide topics: photo beside the text */
+  .bento--wide {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: center;
   }
 
-  .sub-title3-care {
-    font-size: 1.2em;
-    margin: 10% 5% 10% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
+  .bento--indoor .topic__media {
+    order: 2;
   }
 
-  .img1-con-care {
-    width: 90%;
-    height: 55vw;
-    border-radius: 15px;
-    background-color: black;
+  /* photo fills the panel height beside the text */
+  .bento--wide .topic__media {
+    align-self: stretch;
+    aspect-ratio: auto;
+    min-height: 220px;
   }
 
-  .img1-custom-care {
-    width: 100%;
-  }
-
-  .con2-care {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .list-group-custom {
-    padding: 0 8%;
-  }
-
-  .custom-row {
-    margin: 0 5%;
-    padding: 10% 0;
-    /* background-color: red; */
-  }
-
-  .img2-con-care {
-    width: 100%;
-    height: 40vw;
-    /* background-color: black; */
-  }
-
-  .img2-custom-care {
-    /* width: 100%; */
-    height: 100%;
-  }
-
-  .img3-con-care {
-    width: 80%;
-    height: 45vw;
-    border-radius: 15px;
-    margin-bottom: 5%;
-  }
-
-  .img3-custom-care {
-    width: 100%;
-    translate: 0 -10%;
-  }
-
-  ol.custom-list {
-    list-style-type: disc;
-  }
-
-  .custom-list {
-    padding: 0 8% 0 5%;
-  }
-
-  .sub-title2-care {
-    font-weight: bold;
-    margin: 5% 0 0 10%;
-    font-size: 1.5em;
-  }
-
-  .custom-li {
-    padding: 3% 0;
-    font-size: 1em;
-  }
-
-  .custom-list-drinking {
-    /* padding: 0 0 0 18%; */
-    /* background-color: black; */
-    width: 80%;
-  }
-
-  ol.custom-list-drinking {
-    list-style-type: disc;
-  }
-
-  .img4-con-care {
-    width: 60%;
-    height: 48vw;
-    margin-bottom: 5%;
-    /* background-color: black; */
-  }
-
-  .img4-custom-care {
-    height: 120%;
-    width: 100%;
-    translate: 5% -9%;
-  }
-
-  .custom-list-decor {
-    /* background-color: black; */
-    width: 80%;
-  }
-
-  ol.custom-list-decor {
-    list-style-type: disc;
-  }
-
-  .img5-con-care {
-    width: 80%;
-    height: 50vw;
-    margin-bottom: 5%;
+  .ask {
+    grid-template-columns: 1fr 1.2fr;
   }
 }
 
-@media (min-width: 767.99px) and (max-width: 991.98px) {
-  .con1-care {
-    height: auto;
+/* 12-column bento: know | cage, misting | food, decor | indoor, ask */
+@media (min-width: 1100px) {
+  .bento {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
   }
 
-  .title1-care {
-    font-size: 3em;
-    margin: 2% 5% 0% 5%;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
+  .know {
+    grid-column: 1 / span 7;
   }
 
-  .sub-title1-care {
-    font-size: 1.8em;
-    margin: 8% 5% 10% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
+  .bento--cage {
+    grid-column: 8 / span 5;
   }
 
-  .sub-title3-care {
-    font-size: 1.8em;
-    margin: 8% 5% 10% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
+  .bento--wide {
+    grid-column: 1 / span 7;
   }
 
-  .img1-con-care {
-    width: 90%;
-    height: 55vw;
-    border-radius: 30px;
-    background-color: black;
+  .bento--food {
+    grid-column: 8 / span 5;
   }
 
-  .img1-custom-care {
-    width: 100%;
+  .bento--decor {
+    grid-column: 1 / span 5;
   }
 
-  .con2-care {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    font-family: "Kaisei Decol", serif;
+  .bento--indoor {
+    grid-column: 6 / span 7;
   }
 
-  .list-group-custom {
-    padding: 0 8%;
-  }
-
-  .custom-row {
-    margin: 0 5%;
-    padding: 10% 0;
-    /* background-color: red; */
-  }
-
-  .img2-con-care {
-    width: 100%;
-    height: 50vw;
-  }
-
-  .img2-custom-care {
-    /* width: 100%; */
-    height: 100%;
-  }
-
-  .img3-con-care {
-    width: 90%;
-    height: 50vw;
-    border-radius: 30px;
-    margin-bottom: 5%;
-  }
-
-  .img3-custom-care {
-    width: 100%;
-    translate: 0 -10%;
-  }
-
-  ol.custom-list {
-    list-style-type: disc;
-  }
-
-  .custom-list {
-    padding: 0 8% 0 10%;
-  }
-
-  .sub-title2-care {
-    font-weight: bold;
-    margin: 5% 0 0 7%;
-    font-size: 1.8em;
-    background-color: black;
-  }
-
-  .custom-li {
-    padding: 2% 0;
-    font-size: 1.5em;
-  }
-
-  .custom-list-drinking {
-    /* padding: 0 0 0 9%; */
-    width: 80%;
-  }
-
-  ol.custom-list-drinking {
-    list-style-type: disc;
-  }
-
-  .img4-con-care {
-    width: 80%;
-    height: 70vw;
-    margin-bottom: 5%;
-    /* background-color: black; */
-  }
-
-  .img4-custom-care {
-    height: 120%;
-    /* width: 100%; */
-    translate: -25% -9%;
-  }
-
-  .custom-list-decor {
-    padding: 0 8% 0 5%;
-  }
-
-  ol.custom-list-decor {
-    list-style-type: disc;
-  }
-
-  .img5-con-care {
-    width: 80%;
-    height: 50vw;
-    margin-bottom: 5%;
-  }
-}
-
-@media (min-width: 991.99px) and (max-width: 1199.98px) {
-  .con1-care {
-    height: auto;
-  }
-
-  .title1-care {
-    font-size: 3.5em;
-    margin: 0% 5% 8% 5%;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title1-care {
-    font-size: 1.5em;
-    margin: 0 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-    position: relative;
-    top: 50%;
-    left: 0;
-    transform: translateY(50%);
-  }
-
-  .sub-title3-care {
-    font-size: 1.5em;
-    margin: 8% 5% 5% 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .img1-con-care {
-    width: 90%;
-    height: 25vw;
-    background-color: black;
-    border-radius: 30px;
-  }
-
-  .img1-custom-care {
-    width: 100%;
-  }
-
-  .con2-care {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .list-group-custom {
-    padding: 0 8%;
-  }
-
-  .custom-row {
-    margin: 0 5%;
-    padding: 5% 0;
-    /* background-color: red; */
-  }
-
-  .img2-con-care {
-    width: 80%;
-    height: 25vw;
-    /* background-color: black; */
-  }
-
-  .img2-custom-care {
-    width: 100%;
-    height: 100%;
-  }
-
-  .img3-con-care {
-    width: 95%;
-    height: 20vw;
-    margin-bottom: 5%;
-    border-radius: 15px;
-  }
-
-  .img3-custom-care {
-    width: 100%;
-    height: 100%;
-    /* translate: 0 -10%; */
-  }
-
-  ol.custom-list {
-    list-style-type: disc;
-  }
-
-  .custom-list {
-    padding: 0 10% 0 10%;
-  }
-
-  .sub-title2-care {
-    font-weight: bold;
-    margin: 5% 0 0 7%;
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  .custom-li {
-    padding: 2% 0;
-    font-size: 1.1em;
-  }
-
-  .custom-list-drinking {
-    /* padding: 0 0 0 9%; */
-    width: 80%;
-    /* background-color: black; */
-  }
-
-  ol.custom-list-drinking {
-    list-style-type: disc;
-  }
-
-  .img4-con-care {
-    width: 80%;
-    height: 27vw;
-    margin-bottom: 5%;
-    /* background-color: black; */
-  }
-
-  .img4-custom-care {
-    height: 120%;
-    /* width: 100%; */
-    translate: -23% -9%;
-  }
-
-  .custom-list-decor {
-    padding: 0 10% 0 5%;
-  }
-
-  ol.custom-list-decor {
-    list-style-type: disc;
-  }
-
-  .img5-con-care {
-    width: 100%;
-    height: 25vw;
-    margin-bottom: 5%;
-  }
-}
-
-@media (min-width: 1199.99px) and (max-width: 1399.98px) {
-  .con1-care {
-    height: auto;
-  }
-
-  .title1-care {
-    font-size: 3em;
-    margin: 0 5% 5% 5%;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title1-care {
-    font-size: 1.2em;
-    margin: 0 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .custom-col-0 {
-    height: 25vw;
-  }
-
-  .sub-title3-care {
-    font-size: 1.2em;
-    margin: 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .img1-con-care {
-    width: 90%;
-    height: 25vw;
-    border-radius: 30px;
-    background-color: black;
-  }
-
-  .img1-custom-care {
-    width: 100%;
-  }
-
-  .con2-care {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    font-family: "Kaisei Decol", serif;
-    /* width: 99%; */
-  }
-
-  .list-group-custom {
-    padding: 0 8%;
-  }
-
-  .custom-row-1 {
-    margin: 0;
-    padding: 0 5%;
-    /* background-color: red; */
-    width: 100%;
-  }
-
-  .custom-row-2 {
-    padding: 2% 5%;
-    /* background-color: red; */
-  }
-
-  .custom-row {
-    margin: 0 5%;
-    padding: 5% 0;
-    /* background-color: red; */
-  }
-
-  .img2-con-care {
-    width: 75%;
-    height: 20vw;
-    /* background-color: black; */
-  }
-
-  .img2-custom-care {
-    width: 100%;
-    height: 100%;
-  }
-
-  .img3-con-care {
-    width: 90%;
-    height: 15vw;
-    margin: 5% 0;
-    border-radius: 15px;
-  }
-
-  .img3-custom-care {
-    width: 100%;
-    height: 100%;
-    translate: 0 0;
-  }
-
-  ol.custom-list {
-    list-style-type: disc;
-  }
-
-  .custom-list {
-    padding: 0 10% 0 10%;
-    font-size: 0.5em;
-  }
-
-  .sub-title2-care {
-    font-weight: bold;
-    margin: 5% 0 0 7%;
-    font-size: 1.5em;
-  }
-
-  .custom-li {
-    padding: 2% 0;
-    font-size: 1.8em;
-  }
-
-  .custom-list-drinking {
-    /* padding: 0 0 0 9%; */
-    width: 80%;
-    font-size: 0.5em;
-    /* background-color: black; */
-  }
-
-  ol.custom-list-drinking {
-    list-style-type: disc;
-  }
-
-  .img4-con-care {
-    width: 80%;
-    height: 22vw;
-    margin-bottom: 5%;
-    /* background-color: black; */
-  }
-
-  .img4-custom-care {
-    height: 120%;
-    /* width: 100%; */
-    translate: -23% -9%;
-  }
-
-  .custom-list-decor {
-    padding: 0 10% 0 5%;
-    font-size: 0.5em;
-  }
-
-  ol.custom-list-decor {
-    list-style-type: disc;
-  }
-
-  .img5-con-care {
-    width: 80%;
-    height: 18vw;
-    margin: 10% 0;
-  }
-
-  .custom-row-4 {
-    margin-bottom: 5%;
-  }
-}
-
-@media (min-width: 1399.99px) {
-  .con1-care {
-    height: auto;
-  }
-
-  .title1-care {
-    font-size: 3em;
-    margin: 0 5% 5% 5%;
-    font-weight: bold;
-    font-family: "Kaisei Decol", serif;
-  }
-
-  .sub-title1-care {
-    font-size: 1.5em;
-    margin: 0 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-    position: relative;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .custom-col-0 {
-    height: 25vw;
-  }
-
-  .sub-title3-care {
-    font-size: 1.5em;
-    margin: 5%;
-    font-family: "Kaisei Decol", serif;
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .img1-con-care {
-    width: 90%;
-    height: 25vw;
-    background-color: black;
-    border-radius: 30px;
-  }
-
-  .img1-custom-care {
-    width: 100%;
-  }
-
-  .con2-care {
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    font-family: "Kaisei Decol", serif;
-    /* width: 99%; */
-  }
-
-  .list-group-custom {
-    padding: 0 8%;
-  }
-
-  .custom-row-1 {
-    margin: 0;
-    padding: 0 5%;
-    /* background-color: red; */
-    width: 100%;
-  }
-
-  .custom-row-2 {
-    padding: 2% 5%;
-    /* background-color: red; */
-  }
-
-  .custom-row {
-    margin: 0 5%;
-    padding: 5% 0;
-    /* background-color: red; */
-  }
-
-  .img2-con-care {
-    width: 75%;
-    height: 20vw;
-    /* background-color: black; */
-  }
-
-  .img2-custom-care {
-    width: 100%;
-    height: 100%;
-  }
-
-  .img3-con-care {
-    width: 90%;
-    height: 15vw;
-    margin: 5% 0;
-    border-radius: 30px;
-  }
-
-  .img3-custom-care {
-    width: 100%;
-    height: 100%;
-    translate: 0 0;
-  }
-
-  ol.custom-list {
-    list-style-type: disc;
-  }
-
-  .custom-list {
-    padding: 0 10% 0 10%;
-    font-size: 0.7em;
-  }
-
-  .sub-title2-care {
-    font-weight: bold;
-    margin: 5% 0 0 7%;
-    font-size: 1.5em;
-  }
-
-  .custom-li {
-    padding: 2% 0;
-    font-size: 1.8em;
-  }
-
-  .custom-list-drinking {
-    /* padding: 0 0 0 9%; */
-    width: 80%;
-    font-size: 0.7em;
-    /* background-color: black; */
-  }
-
-  ol.custom-list-drinking {
-    list-style-type: disc;
-  }
-
-  .img4-con-care {
-    width: 80%;
-    height: 22vw;
-    margin-bottom: 5%;
-    /* background-color: black; */
-  }
-
-  .img4-custom-care {
-    height: 120%;
-    /* width: 100%; */
-    translate: -23% -9%;
-  }
-
-  .custom-list-decor {
-    padding: 0 10% 0 5%;
-    font-size: 0.7em;
-  }
-
-  ol.custom-list-decor {
-    list-style-type: disc;
-  }
-
-  .img5-con-care {
-    width: 80%;
-    height: 18vw;
-    margin: 10% 0;
-  }
-
-  .custom-row-4 {
-    margin-bottom: 5%;
+  .ask {
+    grid-column: 1 / -1;
   }
 }

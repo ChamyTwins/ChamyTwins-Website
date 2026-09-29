@@ -1,212 +1,317 @@
-@media (max-width: 575.98px) {
-  .custom-icon-hmpg {
-    color: white;
-    font-size: 1.5em;
+/* ---------- Header ---------- */
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  transition: background-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+
+.site-header.is-solid {
+  background: rgba(7, 16, 13, 0.55);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  box-shadow: inset 0 -1px 0 rgba(215, 230, 222, 0.12);
+}
+
+.site-header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: auto;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--white);
+}
+
+/* mobile-first: compact brand, full size from 992px */
+.brand__logo {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: transform 0.6s var(--ease-out);
+}
+
+.brand:hover .brand__logo {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+.brand__name {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Desktop links: a glass pill ---------- */
+
+.site-nav {
+  display: none;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.3rem;
+  border: 1px solid rgba(215, 230, 222, 0.18);
+  border-radius: 999px;
+  background: rgba(190, 212, 200, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.site-nav__link {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color var(--dur), background-color var(--dur), box-shadow var(--dur);
+}
+
+.site-nav__link:hover {
+  color: var(--white);
+}
+
+.site-nav__link.active {
+  color: var(--night-1000);
+  background: var(--emerald-soft);
+  font-weight: 500;
+}
+
+.nav-ig {
+  display: none;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(215, 230, 222, 0.25);
+  color: var(--white);
+  text-decoration: none;
+  transition: background-color var(--dur), box-shadow var(--dur);
+}
+
+.nav-ig:hover {
+  color: var(--white);
+  background: rgba(190, 212, 200, 0.15);
+  box-shadow: none;
+}
+
+/* ---------- Hamburger ---------- */
+
+.nav-toggle {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  width: 46px;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid rgba(215, 230, 222, 0.25);
+  border-radius: 50%;
+  background: rgba(190, 212, 200, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background-color var(--dur), border-color var(--dur);
+}
+
+.nav-toggle:hover {
+  background: rgba(190, 212, 200, 0.16);
+  border-color: rgba(215, 230, 222, 0.5);
+}
+
+.nav-toggle span {
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  border-radius: 2px;
+  background: var(--white);
+  transition: width var(--dur) var(--ease-out);
+}
+
+.nav-toggle span:nth-child(2) {
+  width: 65%;
+}
+
+.nav-toggle:hover span:nth-child(2) {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .brand__logo {
+    width: 42px;
   }
 
-  .custom-icon {
-    color: black;
-    font-size: 1.5em;
+  .brand__name {
+    font-size: 1.2rem;
   }
 
-  .custom-nav {
-    margin: 6% 0 6% 2%;
+  .site-nav {
+    display: block;
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
   }
 
-  .img1-con-nav {
-    width: 15vw;
-    height: 15vw;
-    margin-right: 6%;
+  .nav-ig {
+    display: inline-grid;
   }
 
-  .con-nav {
-    background-color: transparent;
+  .nav-toggle {
+    display: none;
   }
 }
 
-@media (min-width: 575.99px) and (max-width: 767.98px) {
-  .custom-icon-hmpg {
-    color: white;
-    font-size: 2em;
-  }
+/* ---------- Mobile drawer ---------- */
 
-  .custom-icon {
-    color: black;
-    font-size: 2em;
-  }
-
-  .custom-nav {
-    margin: 6% 0 6% 2%;
-  }
-
-  .img1-con-nav {
-    width: 12vw;
-    height: 12vw;
-    margin-right: 6%;
-  }
-
-  .logobisnis {
-    width: 100%;
-    height: 100%;
-  }
-
-  .con-nav {
-    background-color: transparent;
-  }
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1090;
+  background: rgba(5, 10, 8, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s var(--ease-out), visibility 0.4s;
 }
 
-@media (min-width: 767.99px) and (max-width: 991.98px) {
-  .custom-icon-hmpg {
-    color: white;
-    font-size: 2em;
-  }
-
-  .custom-nav-title {
-    font-size: 2em;
-  }
-
-  .nav-item {
-    font-size: 1.6em;
-  }
-
-  .custom-icon {
-    color: black;
-    font-size: 3em;
-  }
-
-  .custom-nav {
-    margin: 6% 0 6% 2%;
-  }
-
-  .img1-con-nav {
-    width: 8vw;
-    height: 8vw;
-    margin-right: 6%;
-  }
-
-  .logobisnis {
-    width: 100%;
-    height: 100%;
-  }
-
-  .con-nav {
-    background-color: transparent;
-  }
+.drawer-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
 }
 
-@media (min-width: 991.99px) and (max-width: 1199.98px) {
-  .custom-icon-hmpg {
-    color: white;
-    font-size: 2.5em;
-  }
-
-  .custom-nav-title {
-    font-size: 2em;
-  }
-
-  .nav-item {
-    font-size: 1.3em;
-  }
-
-  .custom-icon {
-    color: black;
-    font-size: 2.5em;
-  }
-
-  .custom-nav {
-    margin: 6% 0 5% 2%;
-  }
-
-  .img1-con-nav {
-    width: 8vw;
-    height: 8vw;
-    margin-right: 6%;
-  }
-
-  .logobisnis {
-    width: 100%;
-    height: 100%;
-  }
-
-  .con-nav {
-    background-color: transparent;
-  }
+.drawer {
+  position: fixed;
+  inset: 0 0 0 auto;
+  z-index: 1100;
+  width: min(86vw, 380px);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 2rem;
+  border-left: 1px solid rgba(215, 230, 222, 0.18);
+  background: radial-gradient(90% 50% at 50% 0%, rgba(88, 128, 110, 0.22), transparent 70%),
+    rgba(7, 16, 13, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: var(--white);
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.5s var(--ease-out), visibility 0.5s;
 }
 
-@media (min-width: 1199.99px) and (max-width: 1399.98px) {
-  .custom-icon-hmpg {
-    color: white;
-    font-size: 2em;
-  }
-
-  .custom-nav-title {
-    font-size: 1.5em;
-  }
-
-  .nav-item {
-    font-size: 1em;
-  }
-
-  .custom-icon {
-    color: black;
-    font-size: 2em;
-  }
-
-  .custom-nav {
-    margin: 4% 0 4% 2%;
-  }
-
-  .img1-con-nav {
-    width: 6vw;
-    height: 6vw;
-    margin-right: 6%;
-  }
-
-  .logobisnis {
-    width: 100%;
-    height: 100%;
-  }
-
-  .con-nav {
-    background-color: transparent;
-  }
+.drawer.is-open {
+  transform: none;
+  visibility: visible;
 }
 
-@media (min-width: 1399.99px) {
-  .custom-icon-hmpg {
-    color: white;
-    font-size: 2.5em;
-  }
+.drawer__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(215, 230, 222, 0.12);
+}
 
-  .custom-nav-title {
-    font-size: 1.5em;
-  }
+.drawer__close {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(215, 230, 222, 0.25);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--dur), transform var(--dur) var(--ease-out);
+}
 
-  .nav-item {
-    font-size: 1em;
-  }
+.drawer__close:hover {
+  background: rgba(190, 212, 200, 0.12);
+  transform: rotate(90deg);
+}
 
-  .custom-icon {
-    color: black;
-    font-size: 2.5em;
-  }
+.drawer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .custom-nav {
-    margin: 4% 0 4% 2%;
-  }
+.drawer__links li {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.4s var(--ease-out), transform 0.5s var(--ease-out);
+}
 
-  .img1-con-nav {
-    width: 6vw;
-    height: 6vw;
-    margin-right: 4%;
-  }
+.drawer.is-open .drawer__links li {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(0.12s + var(--i) * 0.07s);
+}
 
-  .logobisnis {
-    width: 100%;
-    height: 100%;
-  }
+.drawer__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0.25rem;
+  border-bottom: 1px solid rgba(215, 230, 222, 0.08);
+  color: var(--text-dim);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: color var(--dur), padding-left var(--dur) var(--ease-out);
+}
 
-  .con-nav {
-    background-color: transparent;
-  }
+.drawer__link i {
+  font-size: 1rem;
+  opacity: 0.5;
+  transition: transform var(--dur) var(--ease-out), opacity var(--dur);
+}
+
+.drawer__link:hover,
+.drawer__link.active {
+  color: var(--white);
+  padding-left: 0.6rem;
+}
+
+.drawer__link.active {
+  color: var(--emerald-soft);
+}
+
+.drawer__link:hover i,
+.drawer__link.active i {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.drawer__foot {
+  margin-top: auto;
+  color: var(--text-faint);
+  font-size: var(--fs-small);
 }
